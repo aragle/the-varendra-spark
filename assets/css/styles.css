@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #000;
+}
+
 #header {
   background-image: linear-gradient(
     147deg,
-    rgb(0, 0, 0) 1%,
+    rgb(22, 22, 22) 1%,
     rgb(196, 77, 45) 99%
   );
 }
@@ -48,6 +52,10 @@
 .dropdown-menu {
   margin-left: 40px;
   background-color: azure;
+}
+
+.dropdown-menu[data-bs-popper]{
+  margin-top: 10px;
 }
 
 .dropdown-item:hover {
@@ -103,4 +111,45 @@
     color: #fff;
     opacity: 0.6;
   }
+}
+
+.modal-content {
+  background-image: linear-gradient(
+    147deg,
+    rgb(22, 22, 22) 1%,
+    rgb(196, 77, 45) 99%
+  );
+  /* background-color: #1e2229; */
+}
+
+.modal-title{
+  color: #fff;
+}
+
+.modal-header{
+  border-bottom: 1px solid #fff;
+}
+
+.card{
+  background-color: #282d36;
+	border-color: #282d36;
+  border-radius: 0;
+  border-bottom: 1px solid #ccc;
+}
+.card:hover{
+  background-color: #1e2229;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.card-title {
+  color: #fff;
+}
+
+.card-text{
+  color: #fff;
+  opacity: 0.5;
 }
