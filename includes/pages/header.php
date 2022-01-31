@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Varendra Spark</title>
     <!-- Link CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <!-- Link JS -->
-    <script src="assets/js/bootstrap.js"></script>
-
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/modal.js"></script>
 </head>
 
 <body>
@@ -40,7 +41,7 @@
                             <a class="nav-link" href="#">Radio and Podcast</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/varendra-portal/student-portal.php">Student Portal</a>
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#studentPanelModal">Student Panel</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
