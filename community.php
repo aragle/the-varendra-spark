@@ -1,4 +1,3 @@
-<!-- Homepage -->
 <?php
     include 'includes/components/global/header.php';
 ?>
@@ -34,7 +33,7 @@ body, html {
   <div class="middle">
     <h1>Under Construction</h1>
     <hr>
-    <p>Homepage</p>
+    <p>Community</p>
   </div>
 </div>
 

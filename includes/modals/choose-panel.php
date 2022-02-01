@@ -1,4 +1,4 @@
-<!-- Choose Student Portal Modals -->
+<!-- Choose Student Panel Modal -->
 <div class="modal fade" id="studentPanelModal" tabindex="-1" aria-labelledby="studentPanelModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -9,7 +9,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <a class="select-student-panel" href="student-panel/new-student-panel.php">
+                    <a class="select-student-panel" href="new-student-panel.php">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">New Student Panel</h5>
@@ -19,7 +19,7 @@
                     </a>
                 </div>
                 <div class="col-sm-12">
-                    <a class="select-student-panel" href="student-panel/old-student-panel.php">
+                    <a class="select-student-panel" href="old-student-panel.php">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Old Student Panel</h5>

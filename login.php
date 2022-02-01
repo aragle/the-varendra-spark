@@ -1,9 +1,9 @@
-<!-- Login Pages -->
+<!-- Login Page -->
 <?php
-    include 'includes/pages/header.php';
+    include 'includes/components/global/header.php';
 ?>
 
 
 <?php
-    include 'includes/pages/footer.php';
+    include 'includes/components/global/footer.php';
 ?>

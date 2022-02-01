@@ -1,5 +1,5 @@
 <?php
-    include 'includes/global/header.php';
+    include 'includes/components/global/header.php';
 ?>
 <style>
 html body {
@@ -10,16 +10,14 @@ html body {
     overflow: hidden;
 }
 
-#preview-frame {
+#frame {
     width: 100%;
-    background-color: #fff;
 }
 </style>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
-//function to fix height of iframe!
 var calcHeight = function() {
-    $('#preview-frame').height($(window).height());
+    $('#frame').height($(window).height());
 }
 
 $(document).ready(function() {
@@ -33,10 +31,10 @@ $(window).resize(function() {
 });
 </script>
 
-<iframe id="preview-frame" src="http://202.5.52.152:8083/front/student/login" name="preview-frame" frameborder="0" noresize="noresize"
+<iframe id="frame" src="http://202.5.52.152:8081/" name="frame" frameborder="0" noresize="noresize"
     style="height: 902px;">
 </iframe>
 
 <?php
-    include 'includes/global/footer.php';
+    include 'includes/components/global/footer.php';
 ?>

@@ -188,3 +188,8 @@ a {
   background-color: #282d36;
   border: 1px solid #fff;
 }
+
+/* Homepage CSS */
+.features-content{
+  height: 2000px;
+}

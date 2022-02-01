@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/all.css">
 
     <!-- Link JS -->
     <script src="assets/js/bootstrap.min.js"></script>
@@ -35,20 +36,20 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/varendra-portal">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="journal.php">Journals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="journal">Journals</a>
+                            <a class="nav-link" href="community.php">Community</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="community">Community</a>
+                            <a class="nav-link" href="forum.php">Student Forum</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="forum">Student Forum</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="radio-podcast">Radio and Podcast</a>
+                            <a class="nav-link" href="radio-podcast.php">Radio and Podcast</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -88,5 +89,5 @@
 
     <!-- Modal for Popup pages -->
     <?php
-        include 'student-panel/choose-panel.php';
+        include 'includes/modals/choose-panel.php';
     ?>
