@@ -38,6 +38,9 @@
                             <a class="nav-link" href="#">Community</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#">Student Forum</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Radio and Podcast</a>
                         </li>
                         <li class="nav-item dropdown">

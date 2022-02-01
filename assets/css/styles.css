@@ -173,6 +173,10 @@ a {
   cursor: pointer;
 }
 
+.sign-text button:hover {
+  background-color: #282d36;
+}
+
 .btn-warning {
   color: #fff;
   background-color: #282d36;
@@ -181,6 +185,6 @@ a {
 
 .btn-warning:hover {
   color: #ccc;
-  
+  background-color: #282d36;
   border: 1px solid #fff;
 }
