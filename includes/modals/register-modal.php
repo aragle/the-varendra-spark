@@ -21,7 +21,7 @@
                         <label class="form-check-label" for="rememberMe">Remember me</label>
                     </div>
                     <div class="modal-footer">
-                        <p class="sign-text" style="float:left;">Have an account? <a  data-bs-toggle="modal" data-bs-target="#loginModal">[Create Here]</a></p>
+                        <p class="sign-text" style="float:left;">Have an account? <a  data-bs-toggle="modal" data-bs-target="#loginModal">[Login Here]</a></p>
                         <button type="submit" class="btn btn-warning float-end">Register</button>
                     </div>
                 </form>
