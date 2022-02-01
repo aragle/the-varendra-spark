@@ -1,5 +1,5 @@
 <?php
-    include 'includes/pages/header.php';
+    include 'includes/global/header.php';
 ?>
 <style>
 html body {
@@ -38,5 +38,5 @@ $(window).resize(function() {
 </iframe>
 
 <?php
-    include 'includes/pages/footer.php';
+    include 'includes/global/footer.php';
 ?>

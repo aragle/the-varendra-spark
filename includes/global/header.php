@@ -2,21 +2,28 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>The Varendra Spark</title>
+    <!-- <meta name="description" content="X">
+    <meta name="keywords" content="X">
+    <meta name="author" content="X"> -->
+
     <!-- Link CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
+
     <!-- Link JS -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
 </head>
 
 <body>
-    <!-- Header or Navbar -->
+    <!-- Header or Navbar Section-->
     <section id="header">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
@@ -66,8 +73,9 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#studentPanelModal">Student
-                                Panel</a>
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#studentPanelModal">
+                                Student Panel
+                            </a>
                         </li>
                     </ul>
                     <div class="sign-item login-button">
@@ -78,8 +86,7 @@
         </nav>
     </section>
 
-<?php
-    include 'includes/modals/student-portal-modal.php';
-    include 'includes/modals/login-modal.php';
-    include 'includes/modals/register-modal.php';
-?>
+    <!-- Modal for Popup pages -->
+    <?php
+        include 'student-panel/choose-panel.php';
+    ?>
