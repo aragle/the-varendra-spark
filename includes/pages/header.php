@@ -13,10 +13,10 @@
     <!-- Link JS -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/modal.js"></script>
 </head>
 
 <body>
+    <!-- Header or Navbar -->
     <section id="header">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
@@ -40,9 +40,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Radio and Podcast</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#studentPanelModal">Student Panel</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -65,14 +62,21 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <!-- <li class="sign-item register-button">
-                            <a class="sign-link" href="#">Register</a>
-                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#studentPanelModal">Student
+                                Panel</a>
+                        </li>
                     </ul>
                     <div class="sign-item login-button">
-                        <a class="sign-link" href="#">Login</a>
+                        <a class="sign-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
                     </div>
                 </div>
             </div>
         </nav>
     </section>
+
+<?php
+    include 'includes/modals/student-portal-modal.php';
+    include 'includes/modals/login-modal.php';
+    include 'includes/modals/register-modal.php';
+?>

@@ -1,13 +1,15 @@
+/* Main CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #000;
 }
 
+/* Header or Navbar CSS */
 #header {
   background-image: linear-gradient(
     147deg,
@@ -19,10 +21,6 @@ body{
 #header nav div span {
   color: #333;
 }
-/* 
-.container-fluid{
-    width: auto;
-} */
 
 .navbar-brand {
   font-size: 25px;
@@ -49,12 +47,13 @@ body{
   padding-left: 25px;
 }
 
+/* Navbar Dropdown Menu */
 .dropdown-menu {
   margin-left: 40px;
   background-color: azure;
 }
 
-.dropdown-menu[data-bs-popper]{
+.dropdown-menu[data-bs-popper] {
   margin-top: 10px;
 }
 
@@ -63,13 +62,10 @@ body{
   opacity: 0.7;
 }
 
+/* Login Button CSS */
 .login-button {
   margin: 7px 5px 7px auto;
   display: block;
-}
-
-.register-button {
-  margin: 7px 10px 7px 5px;
 }
 
 .sign-link {
@@ -81,6 +77,7 @@ body{
     border-color 0.15s ease-in-out;
   border: 1px solid #fff;
   width: 100%;
+  border-radius: 10px;
 }
 
 .sign-link:hover {
@@ -88,6 +85,7 @@ body{
   opacity: 0.6;
 }
 
+/* Login Button CSS for Low Resulation Screen */
 @media only screen and (max-width: 1279px) {
   .dropdown-menu {
     margin-left: 40px;
@@ -113,35 +111,49 @@ body{
   }
 }
 
+/* Modal */
 .modal-content {
+  background-color: #282d36;
+  box-shadow: 0px 0px 15px #ccc;
+}
+
+.modal-body {
+  color: #ccc;
+}
+
+.modal-title {
+  color: #fff;
+}
+
+.modal-header {
   background-image: linear-gradient(
     147deg,
     rgb(22, 22, 22) 1%,
     rgb(196, 77, 45) 99%
   );
-  /* background-color: #1e2229; */
-}
-
-.modal-title{
-  color: #fff;
-}
-
-.modal-header{
   border-bottom: 1px solid #fff;
 }
 
-.card{
+.modal-footer {
+  background-image: linear-gradient(
+    147deg,
+    rgb(22, 22, 22) 1%,
+    rgb(196, 77, 45) 99%
+  );
+}
+
+/* Select Student Panel Card CSS in Modal */
+.card {
   background-color: #282d36;
-	border-color: #282d36;
+  border-color: #282d36;
   border-radius: 0;
   border-bottom: 1px solid #ccc;
 }
-.card:hover{
+.card:hover {
   background-color: #1e2229;
 }
 
-
-a{
+a {
   text-decoration: none;
 }
 
@@ -149,7 +161,26 @@ a{
   color: #fff;
 }
 
-.card-text{
+.card-text {
   color: #fff;
   opacity: 0.5;
+}
+
+/* Sign Modal Toggle CSS */
+.sign-text a {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: #282d36;
+  border: 1px solid #fff;
+}
+
+.btn-warning:hover {
+  color: #ccc;
+  
+  border: 1px solid #fff;
 }
