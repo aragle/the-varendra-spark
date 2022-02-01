@@ -1,7 +1,14 @@
 <?php
 session_start();
-
 include 'connection/connection.php';
+
+// initializing variables
+$name = "";
+$username = "";
+$email = "";
+$dept = "";
+$batch = "";
+$errors = array();
 
 if (isset($_POST['reg_user'])) {
   // receive all input values from the form

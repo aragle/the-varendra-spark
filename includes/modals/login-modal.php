@@ -7,7 +7,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
+                <form method="post" action="login.php">
+                <!-- <?php include 'includes/handlers/errors-handler.php'; ?> -->
                     <div class="mb-3">
                         <label class="form-label">Email Address</label>
                         <input type="text" class="form-control" id="username" name="username" placeholder="Username" />

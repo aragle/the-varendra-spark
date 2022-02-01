@@ -134,14 +134,13 @@ body {
   border-bottom: 1px solid #fff;
 }
 
-.modal-footer {
-  /* background-image: linear-gradient(
+/* .modal-footer {
+  background-image: linear-gradient(
     180deg,
     rgb(22, 22, 22) 1%,
     rgb(196, 77, 45) 99%
-  ); */
-  float: left;
-}
+  );
+} */
 
 /* Select Student Panel Card CSS in Modal */
 .card {
