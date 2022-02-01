@@ -9,7 +9,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <a class="select-student-panel" href="studrnt-panel/new-student-panel.php">
+                    <a class="select-student-panel" href="student-panel/new-student-panel.php">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">New Student Panel</h5>
@@ -19,7 +19,7 @@
                     </a>
                 </div>
                 <div class="col-sm-12">
-                    <a class="select-student-panel" href="studrnt-panel/old-student-panel.php">
+                    <a class="select-student-panel" href="student-panel/old-student-panel.php">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Old Student Panel</h5>
