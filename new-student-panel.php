@@ -39,7 +39,7 @@ $(window).resize(function() {
 });
 </script>
 
-<iframe id="preview-frame" src="http://202.5.52.152:8083/" name="preview-frame" frameborder="0" noresize="noresize"
+<iframe id="preview-frame" src="http://202.5.52.152:8083/front/student/login" name="preview-frame" frameborder="0" noresize="noresize"
     style="height: 902px;">
 </iframe>
 
