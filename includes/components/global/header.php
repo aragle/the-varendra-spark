@@ -36,9 +36,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/varendra-portal">Home</a>
-                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="wall.php">Wall</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="journal.php">Journals</a>
                         </li>
@@ -74,13 +74,13 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#studentPanelModal">
+                            <a class="nav-link" style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#studentPanelModal">
                                 Student Panel
                             </a>
                         </li>
                     </ul>
                     <div class="sign-item login-button">
-                        <a class="sign-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                        <a class="sign-link" href="login.php">Login</a>
                     </div>
                 </div>
             </div>
