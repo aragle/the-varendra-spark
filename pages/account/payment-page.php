@@ -95,7 +95,7 @@
             <!-- Billing card 1-->
             <div class="card h-100 border-start-lg border-start-primary bg-dark text-white-50">
                 <div class="card-body">
-                    <div class="small text-muted">Amount</div>
+                    <div class="small text-muted">Amount (Unpaid)</div>
                     <div class="h3 current-title">৳ 23,273.00</div>
                 </div>
             </div>
