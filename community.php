@@ -1,11 +1,5 @@
 <?php
-    include 'includes/components/global/header.php';
-?>
-
-<?php
-    include 'includes/components/local/community/community-controller.php';
-?>
-
-<?php
-    include 'includes/components/global/footer.php';
+    include 'global/header.php';
+    include 'pages/community/community-index.php';
+    include 'global/footer.php';
 ?>

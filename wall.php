@@ -1,11 +1,5 @@
 <?php
-    include 'includes/components/global/header.php';
-?>
-
-<?php
-    include 'includes/components/local/wall/wall-controller.php';
-?>
-
-<?php
-    include 'includes/components/global/footer.php';
+    include 'global/header.php';
+    include 'pages/wall/wall-index.php';
+    include 'global/footer.php';
 ?>
