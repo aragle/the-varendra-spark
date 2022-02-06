@@ -81,16 +81,16 @@ p {
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">VU Official</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Student Panel (Old)</a>
+                                <a href="#!" class="text-white">VU Official Website</a>
                             </li>
                             <li>
                                 <a href="#!" class="text-white">Student Panel (New)</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Admission on VU</a>
+                                <a href="#!" class="text-white">Student Panel (Old)</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Alumni Website</a>
                             </li>
                         </ul>
                     </div>
@@ -100,11 +100,10 @@ p {
                         <h5 class="text-uppercase">Download Our Apps</h5>
 
                         <ul class="list-unstyled mb-0">
-                            <li>
+                            <li style="margin-bottom: 25px;">
                                 <a href="#" class="text-white"><img style="width: 150px"
                                         src="assets/images/google-play-badge.png" alt="Get our apps on Play Store"></a>
                             </li>
-                            <br>
                             <li>
                                 <a href="#" class="text-white"><img style="width: 150px"
                                         src="assets/images/app-store-badge.png" alt="Get our apps on App Store"></a>
