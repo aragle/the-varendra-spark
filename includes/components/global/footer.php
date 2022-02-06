@@ -3,6 +3,10 @@
 p {
     margin-bottom: 0px !important;
 }
+.list-unstyled li{
+    padding: 5px 0px;
+    border: 0.1px solid #333;
+}
 </style>
 <section id="footer">
     <footer class="bg-dark text-center text-white">
@@ -46,46 +50,47 @@ p {
                                 <a href="#!" class="text-white">Link 4</a>
                             </li>
                         </ul> -->
-                        <p style="margin-top: 40px; font-size: 35px; font-family: unique;">The Varendra Spark</p>
+                        <p style="border: 1px solid #333; margin-top: 60px; font-size: 35px; font-family: unique;">The Varendra Spark</p>
                         <p>A Varendra University Online Portal</p>
                     </div>
 
+
                     <!--Grid column 2-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
+                        <h5 class="text-uppercase">Policies</h5>
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">Link 1</a>
+                                <a href="#!" class="text-white">Terms and Conditions</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 2</a>
+                                <a href="#!" class="text-white">Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 3</a>
+                                <a href="#!" class="text-white">Cookie Policy</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 4</a>
+                                <a href="#!" class="text-white">Contact</a>
                             </li>
                         </ul>
                     </div>
 
                     <!--Grid column 3-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
+                        <h5 class="text-uppercase">Important Links</h5>
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">Link 1</a>
+                                <a href="#!" class="text-white">VU Official</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 2</a>
+                                <a href="#!" class="text-white">Student Panel (Old)</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 3</a>
+                                <a href="#!" class="text-white">Student Panel (New)</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 4</a>
+                                <a href="#!" class="text-white">Admission on VU</a>
                             </li>
                         </ul>
                     </div>
@@ -96,10 +101,13 @@ p {
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#" class="text-white"><img style="width: 200px" src="assets/images/google-play-badge.png" alt="Get our apps on Play Store"></a>
+                                <a href="#" class="text-white"><img style="width: 150px"
+                                        src="assets/images/google-play-badge.png" alt="Get our apps on Play Store"></a>
                             </li>
+                            <br>
                             <li>
-                            <a href="#" class="text-white"><img style="width: 175px" src="assets/images/app-store-badge.png" alt="Get our apps on App Store"></a>
+                                <a href="#" class="text-white"><img style="width: 150px"
+                                        src="assets/images/app-store-badge.png" alt="Get our apps on App Store"></a>
                             </li>
                         </ul>
                     </div>
