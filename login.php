@@ -4,9 +4,8 @@
 ?>
 
 <style>
-.gradient-custom {
-
-    background-color: #000; 
+body{
+    background-color: #222;
 }
 .pb-5{
     padding-bottom: 2rem !important;

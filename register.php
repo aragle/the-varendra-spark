@@ -6,14 +6,7 @@
 <style>
 body {
     color: #fff;
-}
-
-.gradient-custom {
-    background: #6a11cb;
-
-    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(22, 22, 22, 1));
-
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(22, 22, 22, 1))
+    background: #333;
 }
 
 .vh-100 {
@@ -23,6 +16,10 @@ body {
 
 .card {
     border-radius: 1rem;
+    background-color: #222;
+}
+
+.card:hover{
     background-color: #222;
 }
 
