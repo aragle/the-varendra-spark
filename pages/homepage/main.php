@@ -25,6 +25,20 @@
     margin-bottom: 0px;
 }
 
+.menu-foot {
+    font-weight: bold;
+    color: #ffffffcc;
+    bottom: 0px;
+    text-align: center;
+    padding: 10px;
+    background: #ffffff11;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.menu-foot:hover {
+    background: #ffffff22;
+}
+
 .content-menu-title {
     font-size: 22px;
     background-color: #212529;
@@ -34,10 +48,10 @@
     padding: 22px 5px;
 }
 
-.sidebar-news{
-  padding: 0;
-  border-radius: 10px;
-  background: #212529;
+.sidebar-news {
+    padding: 0;
+    border-radius: 10px;
+    background: #212529;
 }
 </style>
 
@@ -278,6 +292,9 @@
                     </h1>
                     <rssapp-feed id="ch7eZITZqBut1OkI"></rssapp-feed>
                     <script src="https://widget.rss.app/v1/feed.js" type="text/javascript" async></script>
+                    <a href="news-and-events.php">
+                        <p class="menu-foot">See More News and Events</p>
+                    </a>
                 </div>
             </div>
         </section>

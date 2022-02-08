@@ -36,5 +36,5 @@ $(window).resize(function() {
 </iframe>
 
 <?php
-    include 'footer.php';
+    include 'global/footer.php';
 ?>
