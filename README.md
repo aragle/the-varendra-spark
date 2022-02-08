@@ -5,8 +5,8 @@
 ## Description
 This is a web portal of Varendra University where student can write their minds on the virtual wall, publish their research paper, build communication with the other department’s students, everyone can give their opinion on a trending topic, listen to radio and podcast and also see their academic information.
 
-## Background:
-Since we have no permanent campus. So, we usually have no contact with other departmental students but we should improve it. That is why this project has some awesome features that will help all the students of Varendra University. These are -
+## Project Background:
+This project has some awesome features that will help all the students of Varendra University. These are -
 
 -	Journal will improve students’ minds by publishing and reading the article or research paper.
 -	Community will build connections among all students.
