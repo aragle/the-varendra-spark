@@ -1,0 +1,121 @@
+body{
+    position:relative;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0; 
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.line{
+    border: 1px solid #707070;
+    opacity: 0.3;
+}
+
+.menu-name{
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.content{
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+}
+
+.card{
+    float: left;
+    overflow: hidden;
+    border: 1px solid #7c7c7c;
+    border-radius: 15px;
+    padding: 15px 15px;
+    margin: 7px 7px;
+    width: 305px;
+    height: 200px;
+}
+
+.card-header{
+    overflow: hidden;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.card-info{
+    overflow: hidden;
+    float: left;
+}
+
+.name{
+    color: #000;
+    font-size: 19px;
+}
+
+.about{
+    color: #707070;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.card-react{
+    overflow: hidden;
+    float: right;
+}
+
+.card-content{
+    float: left;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.login-for-more{
+    bottom: 20px;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    background-color: white;
+    padding: 20px 0px;
+    font-size: 18px;
+}
+
+.login-for-more a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .content{
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1127px) {
+    .content{
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+    }
+  }
+  @media screen and (min-width: 1128px) and (max-width: 1439px) {
+    .content{
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .content{
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 350px);
+    }
+  }

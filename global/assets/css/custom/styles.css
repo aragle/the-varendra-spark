@@ -1,7 +1,7 @@
 /* Main */
 body{
-  background: #333;
-  color: rgba(255, 255, 255, .6) !important;
+  background-color: #363a3e;
+  color: rgba(255, 255, 255, .5) !important;
 }
 
 /* Header or Navbar CSS */

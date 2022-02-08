@@ -1,0 +1,97 @@
+.header{
+    width: 100wh;
+    overflow: hidden;
+    /* padding-left: 30px; */
+}
+
+.logo img{
+    height: 24px;
+    width: 24px;
+    padding: 15px 0px;
+    opacity: 1;
+}
+
+.header a{
+    float: left;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header p{
+    float: left;
+    width: 0px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-left: auto;
+}
+
+.header-right {
+    float: right;
+    /* padding-right: 30px; */
+}
+
+.header-right ul{
+    list-style-type: none;
+}
+
+.header-right ul li{
+    float: left;
+    padding-right: 15px;
+
+}
+
+.header-right ul li a{
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.header-right ul li a:hover{
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5px;
+    color: #000;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.signin a{
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: black;
+    color: #fff !important;
+}
+
+@media screen and (max-width: 420px) {
+    .header a {
+      display: block;
+      text-align: left;
+    }
+
+    .header p{
+        display: none;
+    }
+
+    .signin{
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 421px) and (max-width: 767px) {
+    .header a {
+      display: block;
+      text-align: left;
+    }
+
+    .header p{
+        display: none;
+    }
+  }
