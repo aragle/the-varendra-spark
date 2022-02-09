@@ -1,8 +1,3 @@
-<?php
-    include 'pages/homepage/corousel.php';
-?>
-
-
 <style>
 .border-bottom {
     border-bottom: 0.1px solid #464646 !important;
@@ -12,7 +7,7 @@
     max-width: 31.9%
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     .col-lg-4 {
         max-width: 100%
     }
@@ -53,7 +48,8 @@
     text-align: center;
     padding: 20px;
     background: #ffffff11;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
+    margin: 8px;
 }
 
 .menu-foot:hover {
@@ -66,13 +62,23 @@
     color: white;
     border-bottom: 0.1px solid #464646;
     margin-bottom: 20px;
-    padding: 22px 5px;
+    padding: 22px 25px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .sidebar-news {
     padding: 0;
     border-radius: 10px;
     background: #212529;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0rem;
+}
+
+.post-title-left {
+    padding: 0 15px;
 }
 </style>
 
@@ -85,7 +91,7 @@
             <div class="row gx-lg-5">
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 bg-dark content-border content-padding">
                     <h1 class="content-menu-title">
-                    Journals Article
+                        Journal Articles
                     </h1>
                     <!-- News block -->
                     <div class="post-padding">
@@ -100,15 +106,11 @@
 
                         <!-- Article data -->
                         <div class="row mb-3">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <a href="" class="text-info">
                                     <i class="fas fa-star"></i>
                                     Featured
                                 </a>
-                            </div>
-
-                            <div class="col-6 text-end">
-                                See all >
                             </div>
                         </div>
 
@@ -132,7 +134,7 @@
                                         class="img-fluid shadow-1-strong rounded" alt="" />
                                 </div>
 
-                                <div class="col-9">
+                                <div class="col-9 post-title-left">
                                     <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
                                     <p>
                                         aratheunseen
@@ -148,7 +150,7 @@
                                         class="img-fluid shadow-1-strong rounded" alt="" />
                                 </div>
 
-                                <div class="col-9">
+                                <div class="col-9 post-title-left">
                                     <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
                                     <p>
                                         aratheunseen
@@ -158,7 +160,7 @@
                         </a>
 
 
-                        
+
                         <a href="" class="text-white-50">
                             <div class="row mb-4 border-bottom pb-2">
                                 <div class="col-3">
@@ -166,7 +168,7 @@
                                         class="img-fluid shadow-1-strong rounded" alt="" />
                                 </div>
 
-                                <div class="col-9">
+                                <div class="col-9 post-title-left">
                                     <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
                                     <p>
                                         aratheunseen
@@ -174,16 +176,17 @@
                                 </div>
                             </div>
                         </a>
-                        
+
                         <a href="#">
-                            <p class="text-center text-white-50 border border-secondary rounded p-2">See More Journals Article</p>
+                            <p class="text-center text-white-50 border border-secondary rounded p-2">See More Journals
+                                Article</p>
                         </a>
 
                     </div>
                     <!-- News block -->
                 </div>
 
-                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 bg-dark content-border content-padding">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 bg-dark content-border content-padding">
                     <h1 class="content-menu-title">
                         Community Posts
                     </h1>
@@ -200,15 +203,11 @@
 
                         <!-- Article data -->
                         <div class="row mb-3">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <a href="" class="text-danger">
                                     <i class="fas fa-star"></i>
                                     Featured
                                 </a>
-                            </div>
-
-                            <div class="col-6 text-end">
-                                See all >
                             </div>
                         </div>
 
@@ -233,7 +232,7 @@
                                         class="img-fluid shadow-1-strong rounded" alt="" />
                                 </div>
 
-                                <div class="col-9">
+                                <div class="col-9 post-title-left">
                                     <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
                                     <p>
                                         aratheunseen
@@ -250,7 +249,7 @@
                                         class="img-fluid shadow-1-strong rounded" alt="" />
                                 </div>
 
-                                <div class="col-9">
+                                <div class="col-9 post-title-left">
                                     <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
                                     <p>
                                         aratheunseen
@@ -267,7 +266,7 @@
                                         class="img-fluid shadow-1-strong rounded" alt="" />
                                 </div>
 
-                                <div class="col-9">
+                                <div class="col-9 post-title-left">
                                     <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
                                     <p>
                                         aratheunseen
@@ -277,13 +276,14 @@
                         </a>
 
                         <a href="#">
-                            <p class="text-center text-white-50 border border-secondary rounded p-2">See More Community Posts</p>
+                            <p class="text-center text-white-50 border border-secondary rounded p-2">See More Community
+                                Posts</p>
                         </a>
 
                     </div>
                     <!-- News block -->
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 sidebar-news content-border">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 sidebar-news content-border">
                     <h1 class="menu-title">
                         News and Events
                     </h1>
@@ -298,4 +298,3 @@
         <!--Section: Content-->
     </div>
 </main>
-<!--Main layout-->

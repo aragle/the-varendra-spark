@@ -14,9 +14,9 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="global/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="global/assets/css/custom/styles.css">
-    <link rel="stylesheet" href="global/assets/css/custom/fonts.css">
-    <link rel="stylesheet" href="global/assets/css/custom/account.css">
+    <link rel="stylesheet" href="global/assets/css/styles.css">
+    <link rel="stylesheet" href="global/assets/css/fonts.css">
+    <link rel="stylesheet" href="global/assets/css/r-and-p.css">
 
     <!-- Link Font -->
     <link rel="stylesheet" href="global/assets/css/fontawesome.css">
@@ -39,7 +39,10 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="wall.php">Wall</a>
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="board.php">Board</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="journal.php">Journals</a>
@@ -48,12 +51,12 @@
                             <a class="nav-link" href="community.php">Community</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="forum.php">Student Forum</a>
+                            <a class="nav-link" href="forum.php">Forum</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="radio-podcast.php">Radio and Podcast</a>
+                            <a class="nav-link" href="radio-podcast.php"> Podcast</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Departments
@@ -74,14 +77,15 @@
                                 <li><a class="dropdown-item" href="#">B</a></li>
                                 <li><a class="dropdown-item" href="#">C</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="profile.php">Student Panel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#studentPanelModal">
-                                Student Panel (iFrame)
+                            <a class="nav-link" style="cursor: pointer" data-bs-toggle="modal"
+                                data-bs-target="#studentPanelModal">
+                                Student Panel
                             </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.php">{Profile}</a>
                         </li>
                     </ul>
                     <div class="sign-item login-button">
