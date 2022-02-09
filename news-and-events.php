@@ -1,11 +1,13 @@
 <?php
     include 'global/header.php';
 ?>
-<!-- News and Events -->
+
+<!-- News and Events Menu -->
 <div class="sub-header bg-dark fs-6 fw-lighter">
-    <b>News and Events</b>
+    <a class="sub-nav sub-nav-active">News and Events</a>
 </div>
 <hr class="mt-0 mb-4">
+
 <div class="my-3">
     <rssapp-wall id="ch7eZITZqBut1OkI">
     </rssapp-wall>

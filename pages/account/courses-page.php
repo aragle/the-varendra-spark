@@ -1,8 +1,8 @@
 <!-- Result Menu -->
 <div class="sub-header bg-dark fs-6 fw-lighter">
     <a href="profile.php" class="sub-nav">Profile</a>
-    <a href="courses.php" class="sub-nav">Courses</a>
-    <a class="sub-nav sub-nav-active">Result</a>
+    <a href="courses.php" class="sub-nav sub-nav-active">Courses</a>
+    <a href="result.php" class="sub-nav">Result</a>
     <a href="payment.php" class="sub-nav">Payment</a>
 </div>
 <hr class="mt-0 mb-4">
@@ -38,6 +38,6 @@ body, html {
   <div class="middle">
     <h1>Under Construction</h1>
     <hr>
-    <p>Result View Page</p>
+    <p>Courses View Page</p>
   </div>
 </div>

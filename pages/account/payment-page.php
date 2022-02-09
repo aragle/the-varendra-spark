@@ -1,8 +1,9 @@
 <!-- Payment Menu -->
 <div class="sub-header bg-dark fs-6 fw-lighter">
     <a href="profile.php" class="sub-nav">Profile</a>
-    <a class="sub-nav sub-nav-active">Payment</a>
+    <a href="courses.php" class="sub-nav">Courses</a>
     <a href="result.php" class="sub-nav">Result</a>
+    <a class="sub-nav sub-nav-active">Payment</a>
 </div>
 <hr class="mt-0 mb-4">
 
@@ -16,6 +17,7 @@
 }
 .card {
     box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+    border-radius: 0.35rem;
 }
 .card .card-header {
     font-weight: 500;
@@ -47,10 +49,6 @@
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.fa-2x {
-    font-size: 2em;
-}
-
 .table-billing-history th, .table-billing-history td {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -62,6 +60,10 @@
     background-color: var(--bs-table-bg);
     border-bottom-width: 1px;
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+tbody, td, tfoot, th, thead, tr{
+    border-bottom: 1px dotted #555;
 }
 
 .border-start-primary {
@@ -180,10 +182,10 @@
                 <table class="table mb-0  bg-dark text-white-50">
                     <thead>
                         <tr>
-                            <th class="border-gray-200" scope="col">Session</th>
-                            <th class="border-gray-200" scope="col">Amount</th>
-                            <th class="border-gray-200" scope="col">Status</th>
-                            <th class="border-gray-200" scope="col">Paid on</th>
+                            <th class="" scope="col">Session</th>
+                            <th class="" scope="col">Amount</th>
+                            <th class="" scope="col">Status</th>
+                            <th class="" scope="col">Paid on</th>
                             <!-- <th class="border-gray-200" scope="col">Receipt</th> -->
                         </tr>
                     </thead>
@@ -191,7 +193,7 @@
                         <tr>
                             <td>Spring-22</td>
                             <td>৳23,273</td>
-                            <td><span class="badge bg-light text-dark">Pending</span></td>
+                            <td><span class="badge bg-light text-dark">Invoice</span></td>
                             <td>-</td>
                             <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
                         </tr>
@@ -207,6 +209,55 @@
                             <td>৳26,283</td>
                             <td><span class="badge bg-success">Receipt</span></td>
                             <td>12/12/2019</td>
+                            <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Summer-19</td>
+                            <td>৳33,260</td>
+                            <td><span class="badge bg-success">Receipt</span></td>
+                            <td>02/03/2019</td>
+                            <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Spring-20</td>
+                            <td>৳12,350</td>
+                            <td><span class="badge bg-success">Receipt</span></td>
+                            <td>03/01/2020</td>
+                            <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Fall-19</td>
+                            <td>৳26,283</td>
+                            <td><span class="badge bg-success">Receipt</span></td>
+                            <td>12/12/2019</td>
+                            <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Summer-19</td>
+                            <td>৳33,260</td>
+                            <td><span class="badge bg-success">Receipt</span></td>
+                            <td>02/03/2019</td>
+                            <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Spring-20</td>
+                            <td>৳12,350</td>
+                            <td><span class="badge bg-success">Receipt</span></td>
+                            <td>03/01/2020</td>
+                            <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Fall-19</td>
+                            <td>৳26,283</td>
+                            <td><span class="badge bg-success">Receipt</span></td>
+                            <td>12/12/2019</td>
+                            <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
+                        </tr>
+                        <tr>
+                            <td>Summer-19</td>
+                            <td>৳33,260</td>
+                            <td><span class="badge bg-success">Receipt</span></td>
+                            <td>02/03/2019</td>
                             <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
                         </tr>
                         <tr>

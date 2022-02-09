@@ -9,7 +9,7 @@
                         <div class="mb-md-5 mt-md-4 pb-5 ">
 
                             <h2 class="fw-bold mb-2 site-name">The Varendra Spark</h2>
-                            <p class="text-white-50 mb-5">Please enter your login and password!</p>
+                            <p class="text-white-50 mb-5">Recover your account here!</p>
                             <form action="">
                                 <div class="form-outline form-white mb-4">
                                     <input type="email" id="studentID" class="form-control form-control-lg" />
@@ -22,7 +22,7 @@
                                 </div>
 
                                 <button class="btn btn-outline-light btn-lg px-5 submit-button"
-                                    type="submit">Sent Recovery Link</button>
+                                    type="submit">Submit</button>
                             </form>
                         </div>
                         <p class="text-center text-muted mt-5 mb-0">Remebrer password? <a href="login.php"

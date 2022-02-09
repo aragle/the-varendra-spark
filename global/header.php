@@ -37,14 +37,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/">Home</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="board.php">Board</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="journal.php">Journals</a>
+                            <a class="nav-link" href="journal.php">Journal</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="community.php">Community</a>
@@ -88,7 +88,7 @@
                         </li>
                     </ul>
                     <div class="sign-item login-button">
-                        <a class="sign-link" href="login.php">Login</a>
+                        <a class="sign-link" href="login.php">Ashiqur Rahman Alif</a>
                     </div>
                 </div>
             </div>

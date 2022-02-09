@@ -1,8 +1,9 @@
 <!-- Profile Menu -->
 <div class="sub-header bg-dark fs-6 fw-lighter">
     <a class="sub-nav sub-nav-active">Profile</a>
-    <a href="payment.php" class="sub-nav">Payment</a>
+    <a href="courses.php" class="sub-nav">Courses</a>
     <a href="result.php" class="sub-nav">Result</a>
+    <a href="payment.php" class="sub-nav">Payment</a>
 </div>
 <hr class="mt-0 mb-4">
 
@@ -21,7 +22,7 @@
 }
 
 .card .card-header {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .card-header:first-child {
@@ -66,11 +67,31 @@
                     <img class="img-account-profile rounded-circle mb-2"
                         src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
                     <!-- Profile picture help block-->
-                    <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
+                    <div class="font-bold text-white mb-2">Ashiqur Rahman Alif</div>
+                    <div class="small font-italic text-muted mb-0">1923XXXXXX</div>
                     <!-- Profile picture upload button-->
-                    <button class="btn btn-primary" type="button">Upload new image</button>
+                    <!-- <button class="btn btn-primary" type="button">Upload new image</button> -->
                 </div>
             </div>
+            <!-- Profile picture card-->
+            <div class="card mb-0 mb-xl-0 bg-dark">
+                <div class="card-header">Admission Information</div>
+                <div class="card-body text-start">
+                    <!-- Profile picture help block-->
+                    <div class="font-bold text-muted mb-0">
+                        Department: Computer Science and Engineering <br>
+                        Program: B. Sc. in CSE <br>
+                        Semester: 9th <br>
+                        Session: Summer-2019 <br>
+                        Section: A <br>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
         </div>
         <div class="col-xl-8">
             <!-- Account details card-->

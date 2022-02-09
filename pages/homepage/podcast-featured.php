@@ -1,7 +1,7 @@
 <style>
 .feature-grad {
     background: rgb(196, 77, 41);
-    background: linear-gradient(180deg, rgba(196, 77, 41, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(180deg, rgba(196, 77, 41, 1) 0%, rgba(33, 33, 33, 1) 100%);
     padding: 15px 0;
 
 }
@@ -30,7 +30,8 @@
 }
 
 .podcast {
-    background: #f0f0f0;
+    background-image: linear-gradient(270deg, #c44d2d -50%, #dddddd 99%);
+
     padding: 30px;
     border-radius: 3px;
 }
@@ -60,7 +61,12 @@
 }
 
 .podcast__meta {
-    background: #ddd;
+    background-color: #bf8070;
+    background-image: -webkit-linear-gradient(180deg, #bf8070 0%, #b3adad 99%);
+    background-image: -moz-linear-gradient(180deg, #bf8070 0%, #b3adad 99%);
+    background-image: -o-linear-gradient(180deg, #bf8070 0%, #b3adad 99%);
+    background-image: linear-gradient(180deg, #bf8070 0%, #b3adad 99%);
+
     margin: 40px -30px -30px -30px;
     padding: 30px;
     display: flex;
@@ -141,8 +147,6 @@
     }
 
     .podcast__meta {
-        background: #ddd;
-        margin: 40px -30px -30px -30px;
         padding: 15px 15px;
         display: flex;
         justify-content: space-between;

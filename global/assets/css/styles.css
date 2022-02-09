@@ -6,11 +6,9 @@ body {
 
 /* Header or Navbar CSS */
 #header {
-  background-image: linear-gradient(
-    147deg,
-    rgb(22, 22, 22) 1%,
-    rgb(196, 77, 45) 99%
-  );
+  background-image: linear-gradient(147deg,
+      rgb(22, 22, 22) 1%,
+      rgb(196, 77, 45) 99%);
 }
 
 .navbar-brand {
@@ -95,6 +93,7 @@ body {
     border: 1px solid #fff;
     width: 100%;
   }
+
   .sign-link:hover {
     color: #fff;
     opacity: 0.6;
@@ -116,11 +115,9 @@ body {
 }
 
 .modal-header {
-  background-image: linear-gradient(
-    1deg,
-    rgb(22, 22, 22) 1%,
-    rgb(196, 77, 45) 99%
-  );
+  background-image: linear-gradient(1deg,
+      rgb(22, 22, 22) 1%,
+      rgb(196, 77, 45) 99%);
   border-bottom: 1px solid #fff;
 }
 
@@ -137,8 +134,9 @@ body {
   background-color: #282d36;
   border-color: #282d36;
   border-radius: 0;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #333;
 }
+
 .card:hover {
   background-color: #1e2229;
 }
@@ -224,4 +222,9 @@ a {
 .sub-nav-active:hover {
   font-weight: 600;
   color: #fff;
+}
+
+/* Footer */
+.footer-content-padding{
+  padding: 0 10px 5px 10px;
 }

@@ -30,7 +30,7 @@
                         </div>
 
                         <div>
-                            <p class="mb-0 text-white text-center">Don't have an account? <a href="registration.php"
+                            <p class="mb-0 text-white-50 text-center">Don't have an account? <a href="registration.php"
                                     class="text-white-50 fw-bold">[Register Here]</a></p>
                         </div>
 
