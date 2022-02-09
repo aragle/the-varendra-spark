@@ -1,4 +1,11 @@
 <style>
+.feature-grad {
+    background: rgb(196, 77, 41);
+    background: linear-gradient(180deg, rgba(196, 77, 41, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    padding: 15px 0;
+
+}
+
 .rap-container {
     width: 95%;
     margin: 15px auto 20px auto;
@@ -195,24 +202,27 @@ new MediaElementPlayer(
 })()
 </script>
 
-<div class="rap-container">
-    <div class="podcast">
-        <h3 class="podcast__episode_title">Socially Unsocial</h3>
-        <h5 class="podcast__title">
-            Varendra Podcast &nbsp;
-            <b style='color:red'> • Premier</b>
-        </h5>
 
-        <div class="podcast__meta">
-            <audio controls width="100%">
-                <source
-                    src="https://cdn.pixabay.com/download/audio/2022/01/26/audio_d0c6ff1bdd.mp3?filename=the-cradle-of-your-soul-15700.mp3">
-                Your browser does not support the audio tag.
-            </audio>
-            <a href="#" class="artwork no-small-screen">
-                <img src="https://images.unsplash.com/photo-1499062229216-7c6349e898fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW50aSUyMHNvY2lhbHxlbnwwfHwwfHw%3D&w=1000&q=80"
-                    alt="">
-            </a>
+<div class="feature-grad">
+    <div class="rap-container">
+        <div class="podcast">
+            <h3 class="podcast__episode_title">Socially Unsocial</h3>
+            <h5 class="podcast__title">
+                Varendra Podcast &nbsp;
+                <b style='color:red'> • Premier</b>
+            </h5>
+
+            <div class="podcast__meta">
+                <audio controls width="100%">
+                    <source
+                        src="https://cdn.pixabay.com/download/audio/2022/01/26/audio_d0c6ff1bdd.mp3?filename=the-cradle-of-your-soul-15700.mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+                <a href="#" class="artwork no-small-screen">
+                    <img src="https://images.unsplash.com/photo-1499062229216-7c6349e898fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW50aSUyMHNvY2lhbHxlbnwwfHwwfHw%3D&w=1000&q=80"
+                        alt="">
+                </a>
+            </div>
         </div>
     </div>
 </div>

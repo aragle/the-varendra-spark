@@ -38,18 +38,16 @@
     color: white;
     border-bottom: 0.1px solid #464646;
     border-radius: 10px 10px 0px 0px;
-    margin-bottom: 0px;
 }
 
 .menu-foot {
     font-weight: bold;
     color: #ffffffcc;
-    bottom: 0px;
     text-align: center;
     padding: 20px;
     background: #ffffff11;
     border-radius: 10px;
-    margin: 8px;
+    margin: 8px  !important;
 }
 
 .menu-foot:hover {

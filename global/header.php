@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="global/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="global/assets/css/styles.css">
     <link rel="stylesheet" href="global/assets/css/fonts.css">
-    <link rel="stylesheet" href="global/assets/css/r-and-p.css">
 
     <!-- Link Font -->
     <link rel="stylesheet" href="global/assets/css/fontawesome.css">

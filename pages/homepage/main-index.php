@@ -1,5 +1,5 @@
 <?php
-    include 'pages/homepage/podcast-player.php';
+    include 'pages/homepage/podcast-featured.php';
 ?>
 
 <?php
