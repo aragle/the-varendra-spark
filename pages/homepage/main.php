@@ -1,11 +1,31 @@
+<?php
+    include 'pages/homepage/corousel.php';
+?>
+
+
 <style>
 .border-bottom {
     border-bottom: 0.1px solid #464646 !important;
 }
 
-.content-border {
-    border: 0.1px solid #464646 !important;
+.col-lg-4 {
+    max-width: 31.9%
 }
+
+@media screen and (max-width: 767px) {
+    .col-lg-4 {
+        max-width: 100%
+    }
+    .container{
+        max-width: 100% !important;
+    }
+}
+
+.content-border {
+        border: 0.1px solid #464646 !important;
+        margin: 0px 5px;
+    }
+
 
 .content-padding {
     border-radius: 10px;
