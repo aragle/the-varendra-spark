@@ -1,6 +1,5 @@
 <style>
 .gap-corusel {
-    margin: 10px;
     border-radius: 0 0 20px 20px;
 }
 </style>

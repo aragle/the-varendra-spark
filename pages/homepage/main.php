@@ -16,15 +16,16 @@
     .col-lg-4 {
         max-width: 100%
     }
-    .container{
+
+    .container {
         max-width: 100% !important;
     }
 }
 
 .content-border {
-        border: 0.1px solid #464646 !important;
-        margin: 0px 5px;
-    }
+    border: 0.1px solid #464646 !important;
+    margin: 0px 5px;
+}
 
 
 .content-padding {
@@ -50,7 +51,7 @@
     color: #ffffffcc;
     bottom: 0px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background: #ffffff11;
     border-radius: 0px 0px 10px 10px;
 }
@@ -84,7 +85,7 @@
             <div class="row gx-lg-5">
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 bg-dark content-border content-padding">
                     <h1 class="content-menu-title">
-                        Journals
+                    Journals Article
                     </h1>
                     <!-- News block -->
                     <div class="post-padding">
@@ -157,6 +158,7 @@
                         </a>
 
 
+                        
                         <a href="" class="text-white-50">
                             <div class="row mb-4 border-bottom pb-2">
                                 <div class="col-3">
@@ -172,22 +174,9 @@
                                 </div>
                             </div>
                         </a>
-
-
-                        <a href="" class="text-white-50">
-                            <div class="row mb-4 border-bottom pb-2">
-                                <div class="col-3">
-                                    <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
-                                        class="img-fluid shadow-1-strong rounded" alt="" />
-                                </div>
-
-                                <div class="col-9">
-                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
-                                    <p>
-                                        aratheunseen
-                                    </p>
-                                </div>
-                            </div>
+                        
+                        <a href="#">
+                            <p class="text-center text-white-50 border border-secondary rounded p-2">See More Journals Article</p>
                         </a>
 
                     </div>
@@ -274,7 +263,7 @@
                         <a href="" class="text-white-50">
                             <div class="row mb-4 border-bottom pb-2">
                                 <div class="col-3">
-                                    <img src="https://mdbootstrap.com/img/new/standard/city/033.jpg"
+                                    <img src="https://mdbootstrap.com/img/new/standard/city/032.jpg"
                                         class="img-fluid shadow-1-strong rounded" alt="" />
                                 </div>
 
@@ -287,22 +276,10 @@
                             </div>
                         </a>
 
-                        <!-- News -->
-                        <a href="" class="text-white-50">
-                            <div class="row mb-4 border-bottom pb-2">
-                                <div class="col-3">
-                                    <img src="https://mdbootstrap.com/img/new/standard/city/034.jpg"
-                                        class="img-fluid shadow-1-strong rounded" alt="" />
-                                </div>
-
-                                <div class="col-9">
-                                    <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
-                                    <p>
-                                        aratheunseen
-                                    </p>
-                                </div>
-                            </div>
+                        <a href="#">
+                            <p class="text-center text-white-50 border border-secondary rounded p-2">See More Community Posts</p>
                         </a>
+
                     </div>
                     <!-- News block -->
                 </div>
