@@ -29,7 +29,7 @@
     <section id="header">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">The Varendra Spark</a>
+                <a class="navbar-brand" href="main-index.php">The Varendra Spark</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -88,7 +88,7 @@
                         </li>
                     </ul>
                     <div class="sign-item login-button">
-                        <a class="sign-link" href="login.php">Ashiqur Rahman Alif</a>
+                        <a class="sign-link" href="login.php">Login</a>
                     </div>
                 </div>
             </div>

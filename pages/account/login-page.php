@@ -10,15 +10,15 @@
 
                             <h2 class="fw-bold mb-2 site-name">The Varendra Spark</h2>
                             <p class="text-white-50 mb-5">Please enter your login and password!</p>
-                            <form action="">
+                            <form action="login.php" method="post">
                                 <div class="form-outline form-white mb-4">
-                                    <input type="email" id="typeEmailX" class="form-control form-control-lg" />
-                                    <label class="form-label" for="typeEmailX">Email</label>
+                                    <input type="text" id="student_id" class="form-control form-control-lg" />
+                                    <label class="form-label" for="student_id">Student ID</label>
                                 </div>
 
                                 <div class="form-outline form-white mb-4">
-                                    <input type="password" id="typePasswordX" class="form-control form-control-lg" />
-                                    <label class="form-label" for="typePasswordX">Password</label>
+                                    <input type="password" id="password" class="form-control form-control-lg" />
+                                    <label class="form-label" for="password">Password</label>
                                 </div>
 
                                 <p class="mb-5 text-end"><a class="text-white-50" href="recovery.php">Forgot

@@ -224,7 +224,40 @@ a {
   color: #fff;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent
+}
+
+#pnav-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0
+}
+
+.nav.nav-tabs {
+  display: block;
+  overflow: auto;
+  white-space: nowrap
+}
+
+.nav.nav-tabs li {
+  display: inline-block
+}
+
 /* Footer */
-.footer-content-padding{
+.footer-content-padding {
   padding: 0 10px 5px 10px;
 }

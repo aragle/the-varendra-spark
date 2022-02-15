@@ -1,4 +1,13 @@
 <!-- Registration -->
+<?php
+    include "controllers/config.php";
+    include "controllers/registration-controller.php";
+?>
+
+<?php
+
+?>
+
 <section id="registration" class="sign">
     <div class="mask d-flex align-items-center h-100 gradient-custom-3">
         <div class="container h-100">
@@ -10,35 +19,40 @@
                             <h2 class="fw-bold mb-2 site-name">The Varendra Spark</h2>
                             <p class="text-white-50 mb-5">Create your account here!</p>
 
-                            <form action="">
-                                <div class="form-outline mb-4">
-                                    <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
-                                    <label class="form-label" for="form3Example1cg">Your Full Name</label>
+                            <form action="registration.php" method="post">
+                                <div class="form-outline mb-4 col-5 float-end">
+                                    <input type="text" name="lastname" id="lastname" class="form-control form-control-lg" />
+                                    <label class="form-label" for="lastname">Last Name</label>
+                                </div>
+
+                                <div class="form-outline mb-4 col-6">
+                                    <input type="text" name="firstname" id="firstname" class="form-control form-control-lg" />
+                                    <label class="form-label" for="firstname">First Name</label>
                                 </div>
 
                                 <div class="form-outline mb-4">
-                                    <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
-                                    <label class="form-label" for="form3Example3cg">Your Student ID</label>
+                                    <input type="text" name="stu_id" id="stu_id" class="form-control form-control-lg" />
+                                    <label class="form-label" for="stu_id">Your Student ID</label>
                                 </div>
 
                                 <div class="form-outline mb-4">
-                                    <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
-                                    <label class="form-label" for="form3Example3cg">Your Email</label>
+                                    <input type="email" name="email" id="email" class="form-control form-control-lg" />
+                                    <label class="form-label" for="email">Your Email</label>
                                 </div>
 
                                 <div class="form-outline mb-4">
-                                    <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
-                                    <label class="form-label" for="form3Example4cg">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control form-control-lg" />
+                                    <label class="form-label" for="password">Password</label>
                                 </div>
 
                                 <div class="form-outline mb-4">
-                                    <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
-                                    <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                                    <input type="password" name="password_confirm" id="password_confirm" class="form-control form-control-lg" />
+                                    <label class="form-label" for="password_confirm">Confirm your password</label>
                                 </div>
 
                                 <div class="form-check d-flex justify-content-center mb-5">
                                     <input class="form-check-input me-2" type="checkbox" value=""
-                                        id="form2Example3cg" />
+                                        id="form2Example3cg" required/>
                                     <label class="form-check-label" for="form2Example3g">
                                         I agree all statements in <a href="#"
                                             class="text-white-50 fst-italic fw-bold">Terms of
@@ -47,8 +61,7 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center">
-                                    <button type="button"
-                                        class="btn btn-outline-light btn-lg submit-button px-5">Register</button>
+                                    <button type="submit" class="btn btn-outline-light btn-lg submit-button px-5" name="reg_user" id="reg_user">Register</button>
                                 </div>
 
                                 <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.php"

@@ -1,9 +1,11 @@
 <!-- Profile Menu -->
-<div class="sub-header bg-dark fs-6 fw-lighter">
-    <a class="sub-nav sub-nav-active">Profile</a>
-    <a href="courses.php" class="sub-nav">Courses</a>
-    <a href="result.php" class="sub-nav">Result</a>
-    <a href="payment.php" class="sub-nav">Payment</a>
+<div id="nav-wrapper" class="sub-header bg-dark fs-6 fw-lighter">
+    <ul class="nav nav-tabs" style="border-bottom: 0!important;">
+        <li><a class="sub-nav sub-nav-active" data-toggle="tab">Profile</a></li>
+        <li><a class="sub-nav" data-toggle="tab" href="courses.php">Courses</a></li>
+        <li><a class="sub-nav" data-toggle="tab" href="result.php">Result</a></li>
+        <li><a class="sub-nav" data-toggle="tab" href="payment.php">Payment</a></li>
+    </ul>
 </div>
 <hr class="mt-0 mb-4">
 

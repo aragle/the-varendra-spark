@@ -7,19 +7,14 @@ body {
 }
 
 .block {
-    /* position: relative; */
-    /* margin: 250px auto; */
-    /* width: 80%; */
-    /* height: 300px; */
-    /* background: linear-gradient(0deg, #000, #272727); */
+    margin: 250px auto;
+    background: linear-gradient(0deg, #000, #272727);
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     position: relative;
-    /* color: #fff; */
-    /* text-align: center; */
-    /* font-size: 50px; */
-    /* font-weight: bold; */
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
     width: 300px;
     height: 300px;
     background: linear-gradient(0deg, #000, #262626);
@@ -60,12 +55,15 @@ body {
 .block:after {
     filter: blur(50px);
 }
+
+p{
+    margin: 0 auto;
+}
 </style>
 
 <div class="block">
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aut facilis. Nam sed minus laborum odio,
-        repellat ad expedita autem voluptatum hic, quasi voluptates, molestias ut soluta perspiciatis! Ut, adipisci.
-		Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        open ↴ <br>
+        TREASURE
     </p>
 </div>
