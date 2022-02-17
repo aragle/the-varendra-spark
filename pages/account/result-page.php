@@ -96,7 +96,6 @@ select{
 <?php
 
     $id = 'Searching...';
-    $semester = 'Searching...';
     $program = "Searching...";
     $session = "Searching...";
     $session = "Searching...";
@@ -104,9 +103,15 @@ select{
     $department = "Searching...";
     $year = "Searching...";
 
+    $url = "result-view.php";
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
       $id = $_POST["stu_id"];
       $semester = $_POST["semester"];
+
+      $url = "http://202.5.52.152:8081/student/show_semester_transcript/" . $id . '/' . $semester;
+      // $next_url = "/result.php?stu_id=" . $id . "&semester=";
 
       $sid = str_split($id);
 
@@ -210,7 +215,7 @@ select{
                     <div class="small text-muted mb-3 search_panel">Result Archive</div>
                     <div class="search_panel">
                         <form method="post" action="result.php">
-                            <input type="text" name="stu_id" id="stu_id" placeholder="Student ID" required>
+                            <input type="text" name="stu_id" id="stu_id" placeholder="Student ID" pattern="[0-9]{9}" minlength="9" maxlength="9" required autocomplete="on">
                             <select name="semester">
                               <option value="1st">1st Semester</option>
                               <option value="2nd">2nd Semester</option>
@@ -239,7 +244,7 @@ select{
             <div class="container-xl px-4 mt-4">
                 <div class="row">
                     <div class="right col-lg-3">
-                        <img class="mb-5" src="https://www.nicepng.com/png/full/334-3348067_result-oriented-png.png"
+                        <img class="mb-1" src="https://static.thenounproject.com/png/3938453-200.png"
                             height="150px" width="150px" alt="Target" style="margin: 0 auto;display: flex;">
                         <table class="itable">
                             <tr style="border-bottom:1px solid #ccc">
@@ -271,9 +276,33 @@ select{
                                 <td style="padding:5px 20px;"><?php echo $id;?></td>
                             </tr> -->
                         </table>
-                    </div>
-                    <iframe class="col-lg-9 frame" id="frame" src="<?php echo "http://202.5.52.152:8081/student/show_semester_transcript/" . $id . '/' . $semester; ?>">
-                    </iframe>
+                        <!-- <table class="itable" style="text-align:center;padding:10px;">
+                          <tr style="border-bottom: 1px dotted #000;">
+                            <th style="padding:10px 5px" colspan="3">Semester</th>
+                          </tr>
+                          <tr style="border-bottom: 1px dotted #999;">
+                            <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "1st" ?>">1st</a></td>
+                            <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "2nd" ?>">2nd</a></td>
+                            <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "3rd" ?>">3rd</a></td>
+                          </tr>
+                          <tr style="border-bottom: 1px dotted #999;" style="border-bottom: 1px dotted #000;">
+                            <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "4th" ?>">4th</a></td>
+                            <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "5th" ?>">5th</a></td>
+                            <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "6th" ?>">6th</a></td>
+                          </tr>
+                          <tr style="border-bottom: 1px dotted #999;">
+                            <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "7th" ?>">7th</a></td>
+                            <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "8th" ?>">8th</a></td>
+                            <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "9th" ?>">9th</a></td>
+                          </tr>
+                          <tr>
+                            <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "10th" ?>">10th</a></td>
+                            <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "11th" ?>">11th</a></td>
+                            <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "12th" ?>">12th</a></td>
+                          </tr>
+                        </table> -->
+                        </div>
+                      <iframe  id="frame" class="col-lg-9 frame" src="<?php echo $url ?>"/>
                 </div>
             </div>
         </div>
