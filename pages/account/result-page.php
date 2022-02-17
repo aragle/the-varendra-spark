@@ -1,13 +1,18 @@
 <!-- Result Menu -->
-<div class="sub-header bg-dark fs-6 fw-lighter">
-    <a href="profile.php" class="sub-nav">Profile</a>
-    <a href="courses.php" class="sub-nav">Courses</a>
-    <a class="sub-nav sub-nav-active">Result</a>
-    <a href="payment.php" class="sub-nav">Payment</a>
+<div id="nav-wrapper" class="sub-header bg-dark fs-6 fw-lighter">
+    <ul class="nav nav-tabs" style="border-bottom: 0!important;">
+        <li><a class="sub-nav"  href="profile.php" data-toggle="tab">Profile</a></li>
+        <li><a class="sub-nav" data-toggle="tab" href="courses.php">Courses</a></li>
+        <li><a class="sub-nav sub-nav-active" data-toggle="tab">Results</a></li>
+        <li><a class="sub-nav" data-toggle="tab" href="payment.php">Payment History</a></li>
+        <li><a class="sub-nav" data-toggle="tab" href="#">Registration Details</a></li>
+        <li><a class="sub-nav" data-toggle="tab" href="#">Assess Teacher</a></li>
+        <li><a class="sub-nav" data-toggle="tab" href="#">Query/Application</a></li>
+        <li><a class="sub-nav" data-toggle="tab" href="#">Apply for Academic Documents</a></li>
+        <li><a class="sub-nav" data-toggle="tab" href="#">Application List</a></li>
+    </ul>
 </div>
 <hr class="mt-0 mb-4">
-
-
 
 <style>
 .card {
