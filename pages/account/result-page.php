@@ -30,23 +30,36 @@
     border-bottom: 1px solid rgba(33, 40, 50, 0.125);
 }
 
+.search_panel{
+  display: grid;
+  justify-content: center;
+}
 
 input {
-    margin: 5px 0;
-    padding: 10px;
-    width: 30%;
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
+  border: 1px solid #bbb;
+  width: 49%;
+  padding: 10px;
+}
+
+select{
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
+  border: 1px solid #bbb;
+  width: 49%;
+  color: black;
+  padding: 10px;
 }
 
 .ibutton {
+  border: 1px solid #bbb;
+  padding: 10px;
+  background: #bbb;
     margin: 5px 0;
-    padding: 10px;
-    width: 20%;
+    width: 100%;
 }
 
-
-.search_panel {
-    margin: 5px auto;
-    padding: 10px;
+.ibutton:hover {
+  background: #ccc;
 }
 
 .frame {
@@ -59,24 +72,11 @@ input {
     border: 1px solid #bbb;
     width: 100%;
     color: black;
-    padding: 20px;
-    margin: 50px 0px;
+    padding: 10px;
+    margin: 10px 0px;
 }
 
 @media screen and (max-width: 1080px) {
-
-    input {
-      background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
-        margin: 0px auto;
-        width: 49%;
-    }
-
-    .ibutton {
-        margin: 5px 0;
-        padding: 10px;
-        width: 100%;
-    }
-
     .frame {
     width: 100%;
     height: 450px;
@@ -92,12 +92,20 @@ input {
 
     $id = 'Searching...';
     $semester = 'Searching...';
+    $program = "Searching...";
+    $session = "Searching...";
+    $session = "Searching...";
+    $faculty = "Searching...";
+    $department = "Searching...";
+    $year = "Searching...";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $id = $_POST["stu_id"];
       $semester = $_POST["semester"];
 
       $sid = str_split($id);
+
+      $year = "20$sid[0]$sid[1]";
 
       //Find Program
       if($sid[5] == "1"){
@@ -194,14 +202,27 @@ input {
         <div class="col-lg-12 mb-4">
             <div class="card h-100 border-start-lg border-start-primary text-white-50" style="background-color:#ddd;">
                 <div class="card-body">
-                    <div class="small text-muted">View Transcript</div>
+                    <div class="small text-muted mb-3 search_panel">Result Archive</div>
                     <div class="search_panel">
                         <form method="post" action="result.php">
-                            <input type="text" class="search_box" name="stu_id" id="stu_id"
-                                placeholder="Student ID" required>
-                            <input type="text" class="search_box" name="semester" id="semester" placeholder="Semester"
-                                required>
-                            <button type="submit" class="search_box ibutton" class="btn btn-primary">View Transcript</button>
+                            <input type="text" name="stu_id" id="stu_id" placeholder="Student ID" required>
+                            <select name="semester">
+                              <option value="1st">1st Semester</option>
+                              <option value="2nd">2nd Semester</option>
+                              <option value="3rd">3rd Semester</option>
+                              <option value="4th">4th Semester</option>
+                              <option value="5th">5th Semester</option>
+                              <option value="6th">6th Semester</option>
+                              <option value="7th">7th Semester</option>
+                              <option value="8th">8th Semester</option>
+                              <option value="9th">9th Semester</option>
+                              <option value="10th">10th Semester</option>
+                              <option value="11th">11th Semester</option>
+                              <option value="12th">12th Semester</option>
+                            </select>
+                            <!-- <input type="text" name="semester" id="semester" placeholder="Semester"
+                                required> -->
+                            <button type="submit" class="ibutton" class="btn btn-primary">View Transcript</button>
                         </form>
                     </div>
                 </div>
@@ -213,8 +234,8 @@ input {
             <div class="container-xl px-4 mt-4">
                 <div class="row">
                     <div class="right col-lg-3">
-                        <img src="https://www.freeiconspng.com/thumbs/results-icon-png/results-icon-png-2.png"
-                            height="200px" width="100%" alt="" srcset="">
+                        <img class="mb-5" src="https://www.nicepng.com/png/full/334-3348067_result-oriented-png.png"
+                            height="150px" width="150px" alt="Target" style="margin: 0 auto;display: flex;">
                         <table class="itable">
                             <tr style="border-bottom:1px solid #ccc">
                                 <td style="padding:5px 20px;">Student ID </td>
@@ -226,7 +247,7 @@ input {
                             </tr>
                             <tr style="border-bottom:1px solid #ccc">
                                 <td style="padding:5px 20px;">Year </td>
-                                <td style="padding:5px 20px;">20<?php echo $sid[0] . $sid[1];?></td>
+                                <td style="padding:5px 20px;"><?php echo $year;?></td>
                             </tr>
                             <tr style="border-bottom:1px solid #ccc">
                                 <td style="padding:5px 20px;">Session </td>
