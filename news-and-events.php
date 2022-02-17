@@ -9,7 +9,7 @@
 <hr class="mt-0 mb-4">
 
 <div class="my-3">
-    <rssapp-wall id="ch7eZITZqBut1OkI">
+    <rssapp-wall id="fwSsdhQhVMkBLpO2">
     </rssapp-wall>
     <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
 </div>

@@ -285,7 +285,7 @@
                     <h1 class="menu-title">
                         News and Events
                     </h1>
-                    <rssapp-feed id="ch7eZITZqBut1OkI"></rssapp-feed>
+                    <rssapp-feed id="fwSsdhQhVMkBLpO2"></rssapp-feed>
                     <script src="https://widget.rss.app/v1/feed.js" type="text/javascript" async></script>
                     <a href="news-and-events.php">
                         <p class="menu-foot">See More News and Events</p>
