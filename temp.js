@@ -1,7 +1,7 @@
 function auth() {
     var code = document.getElementById("code").value;
 
-    if (code == "tvs@123") {
+    if (code == "tvs@000") {
         window.location.href = "main-index.php";
     } else {
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
