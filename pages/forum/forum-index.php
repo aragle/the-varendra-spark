@@ -254,12 +254,12 @@ a{
               </h4>
               <hr class="my-0 text-tag">
               <div class="row text-tag text-center d-flex flex-row op-7 mx-0">
-                <div class="col-sm-6 flex-ew text-center py-3 border-right"> <a class="d-block lead font-weight-bold" href="#">9</a> Departments </div>
-                <div class="col-sm-6 col flex-ew text-center py-3 mx-0"> <a class="d-block lead font-weight-bold" href="#">45</a> Topics </div>
+                <div class="col-sm-6 flex-ew text-center py-3 border-right"> <a class="d-block lead font-weight-bold text-success text-success text-success text-success" href="#">9</a> Departments </div>
+                <div class="col-sm-6 col flex-ew text-center py-3 mx-0"> <a class="d-block lead font-weight-bold text-success text-success text-success" href="#">45</a> Topics </div>
               </div>
               <div class="row text-tag d-flex flex-row op-7">
-                <div class="col-sm-6 flex-ew text-center py-3 border-right mx-0"> <a class="d-block lead font-weight-bold" href="#">300</a> Posts </div>
-                <div class="col-sm-6 flex-ew text-center py-3 mx-0"> <a class="d-block lead font-weight-bold" href="#">203K</a> Total Views </div>
+                <div class="col-sm-6 flex-ew text-center py-3 border-right mx-0"> <a class="d-block lead font-weight-bold text-success text-success" href="#">300</a> Posts </div>
+                <div class="col-sm-6 flex-ew text-center py-3 mx-0"> <a class="d-block lead font-weight-bold text-success" href="#">203K</a> Total Views </div>
               </div>
             </div>
 <!-- Trending Posts -->
