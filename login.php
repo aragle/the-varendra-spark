@@ -2,6 +2,7 @@
 
   include "controllers/config.php";
   // include "controllers/session.php";
+  include 'global/header.php';
 
    $error="";
 
@@ -14,20 +15,19 @@ if (isset($_POST['login'])) {
 
       $sql = "SELECT * FROM users WHERE student_id = '$student_id' and password = '$pass'";
       $result = mysqli_query($connection,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      $fetch = mysqli_fetch_array($result,MYSQLI_ASSOC);
       // $status = $row['status'];
 
       $count = mysqli_num_rows($result);
 
       // If result matched $myusername and $mypassword, table row must be 1 row
 
-      if($count == 1) {
+      if($count == 1){
+        $_SESSION['student_id'] = $student_id;
+        echo "<script>alert('" . $count . " +Login Successfully!')</script>";
+        header("location: main-index.php");
 
-        echo "<script>alert('Login Successfully!')</script>";
-         header("location: main-index.php");
-         $_SESSION['student_id'] = $student_id;
       }else {
-        echo "<script>alert('Login Failed!')</script>";
          $error = "Invalid Student ID or Password.";
       }
    }
@@ -35,7 +35,6 @@ if (isset($_POST['login'])) {
 ?>
 
 <?php
-    include 'global/header.php';
     include 'pages/account/login-page.php';
     include 'global/footer.php';
 ?>

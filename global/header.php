@@ -61,7 +61,7 @@
 														<a class="nav-link" href="podcast.php"> Podcast</a>
 												</li>
 												<li class="nav-item">
-														<a class="nav-link" href="messages.php">Message (<span style="color:#ccc;">5</span>)</a>
+														<a class="nav-link" href="messages.php">Message (<span class="text-danger">5</span>)</a>
 												</li>
 												<li class="nav-item">
 														<a class="nav-link" href="profile.php">{Profile}</a>
@@ -71,12 +71,16 @@
 												</li>
 										</ul>
 										<div class="sign-item login-button">
-											<?php
-											 if(isset($_SESSION['student_id'])){
-												  echo "<a class='sign-link' href='profile.php'>" . $_SESSION['student_id'] . "</a>";
-											 }else{
-												 echo "<a class='sign-link' href='login.php'>Login</a>";
-											 }
+                      <?php
+  											 if(isset($_SESSION['student_id'])){
+
+                            $sql = mysqli_query($connection, "SELECT * FROM users WHERE student_id='$_SESSION[student_id]'") or die(mysqli_error());
+                   				  $fetch = mysqli_fetch_array($sql);
+
+                            echo "<a class='sign-link' href='profile.php'>" . $fetch['first_name'] . " " . $fetch['last_name'] . "</a>";
+  											 }else{
+  												 echo "<a class='sign-link' href='login.php'>Login</a>";
+  											 }
 											?>
 										</div>
 								</div>
