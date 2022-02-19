@@ -4,7 +4,6 @@ body, html {
 }
 
 .bgimg {
-  background-color: #222;
   height: 100%;
   background-position: center;
   background-size: cover;
