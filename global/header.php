@@ -1,3 +1,8 @@
+<?php
+  include "controllers/config.php";
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,9 +66,18 @@
 												<li class="nav-item">
 														<a class="nav-link" href="profile.php">{Profile}</a>
 												</li>
+												<li class="nav-item">
+														<a class="nav-link" href="controllers/logout.php">{Logout}</a>
+												</li>
 										</ul>
 										<div class="sign-item login-button">
-												<a class="sign-link" href="login.php">Login</a>
+											<?php
+											 if(isset($_SESSION['student_id'])){
+												  echo "<a class='sign-link' href='profile.php'>" . $_SESSION['student_id'] . "</a>";
+											 }else{
+												 echo "<a class='sign-link' href='login.php'>Login</a>";
+											 }
+											?>
 										</div>
 								</div>
 						</div>

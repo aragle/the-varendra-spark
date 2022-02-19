@@ -4,15 +4,6 @@
 </div>
 
 <!-- Registration -->
-<?php
-    include "controllers/config.php";
-    include "controllers/registration-controller.php";
-?>
-
-<?php
-
-?>
-
 <section id="registration" class="sign">
     <div class="mask d-flex align-items-center h-100 gradient-custom-3">
         <div class="container h-100">
@@ -25,8 +16,14 @@
                             <p class="text-white-50 mb-5">Create your account here!</p>
 
                             <form action="registration.php" method="post">
+                              <?php
+                              foreach ($errors as $issues){
+                                  echo "<span style='color:red;'> * </span> " . $issues . "<br>";
+                              }
+                               ?>
+                               <br>
                                 <div class="form-outline mb-4 col-5 float-end">
-                                    <input type="text" name="lastname" id="lastname" class="form-control form-control-lg" />
+                                    <input type="text" name="lastname" id="lastname" class="form-control form-control-lg" autocomplete="on" />
                                     <label class="form-label" for="lastname">Last Name</label>
                                 </div>
 
@@ -56,9 +53,9 @@
                                 </div>
 
                                 <div class="form-check d-flex justify-content-center mb-5">
-                                    <input class="form-check-input me-2" type="checkbox" value=""
-                                        id="form2Example3cg" required/>
-                                    <label class="form-check-label" for="form2Example3g">
+                                    <input name="terms" class="form-check-input me-2" type="checkbox" value=""
+                                        id="terms" required/>
+                                    <label class="form-check-label" for="terms">
                                         I agree all statements in <a href="#"
                                             class="text-white-50 fst-italic fw-bold">Terms of
                                             service</a>
@@ -66,14 +63,12 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center">
-                                    <button type="submit" class="btn btn-outline-light btn-lg submit-button px-5" name="reg_user" id="reg_user">Register</button>
+                                    <button type="submit" class="btn btn-outline-light btn-lg submit-button px-5" name="registration" id="registration">Register</button>
                                 </div>
 
                                 <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.php"
                                         class="fw-bold text-white-50">[Login Here]</a></p>
-
                             </form>
-
                         </div>
                     </div>
                 </div>
@@ -81,3 +76,24 @@
         </div>
     </div>
 </section>
+
+<script type="text/javascript">
+  window.onbeforeunload = function() {
+    sessionStorage.setItem("firstname", $('#firstname').val());
+    sessionStorage.setItem("lastname", $('#lastname').val());
+    sessionStorage.setItem("stu_id", $('#stu_id').val());
+    sessionStorage.setItem("email", $('#email').val());
+  }
+
+  window.onload = function() {
+    var firstname = sessionStorage.getItem("firstname");
+    var lastname = sessionStorage.getItem("lastname");
+    var stu_id = sessionStorage.getItem("stu_id");
+    var email = sessionStorage.getItem("email");
+
+    if (firstname !== null) $('#firstname').val("firstname");
+    if (lastname !== null) $('#lastname').val("lastname");
+    if (stu_id !== null) $('#stu_id').val("stu_id");
+    if (email !== null) $('#email').val("email");
+  }
+</script>

@@ -16,20 +16,24 @@
                             <h2 class="fw-bold mb-2 site-name">The Varendra Spark</h2>
                             <p class="text-white-50 mb-5">Please enter your login and password!</p>
                             <form action="login.php" method="post">
+                              <?php
+                                  echo "<span class='text-danger'> " . $error . "</span><br>";
+                               ?>
+                               <br>
                                 <div class="form-outline form-white mb-4">
-                                    <input type="text" id="student_id" class="form-control form-control-lg" />
+                                    <input type="text" name="student_id" id="student_id" class="form-control form-control-lg" />
                                     <label class="form-label" for="student_id">Student ID</label>
                                 </div>
 
                                 <div class="form-outline form-white mb-4">
-                                    <input type="password" id="password" class="form-control form-control-lg" />
+                                    <input type="password" id="password" name="password" class="form-control form-control-lg" />
                                     <label class="form-label" for="password">Password</label>
                                 </div>
 
                                 <p class="mb-5 text-end"><a class="text-white-50" href="recovery.php">Forgot
                                         password?</a></p>
 
-                                <button class="btn btn-outline-light btn-lg px-5 submit-button"
+                                <button name="login" class="btn btn-outline-light btn-lg px-5 submit-button"
                                     type="submit">Login</button>
                             </form>
                         </div>
