@@ -1,10 +1,4 @@
 <!-- Account Sub Header -->
-<style media="screen">
-  .sub-header{
-        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, #202124 10%)
-  }
-</style>
-
 <div id="nav-wrapper" class="sub-header bg-dark fs-6 fw-lighter">
     <ul class="nav nav-tabs" style="border-bottom: 0!important;">
         <li><a class="sub-nav" data-toggle="tab" href="profile.php">Profile</a></li>

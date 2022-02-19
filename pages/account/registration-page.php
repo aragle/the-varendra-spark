@@ -1,3 +1,8 @@
+<!-- Sub Menu -->
+<div class="sub-header fs-6 fw-lighter">
+    <a class="sub-nav">Registration</a>
+</div>
+
 <!-- Registration -->
 <?php
     include "controllers/config.php";

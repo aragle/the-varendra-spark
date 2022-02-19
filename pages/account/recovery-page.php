@@ -1,4 +1,9 @@
-<!-- Login -->
+<!-- Sub Menu -->
+<div class="sub-header fs-6 fw-lighter">
+    <a class="sub-nav">Recovery Password</a>
+</div>
+
+<!-- Recovery -->
 <section id="login" class="sign">
     <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
