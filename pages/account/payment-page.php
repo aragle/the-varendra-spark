@@ -1,11 +1,6 @@
-<!-- Payment Menu -->
-<div class="sub-header bg-dark fs-6 fw-lighter">
-    <a href="profile.php" class="sub-nav">Profile</a>
-    <a href="courses.php" class="sub-nav">Courses</a>
-    <a href="result.php" class="sub-nav">Result</a>
-    <a class="sub-nav sub-nav-active">Payment</a>
-</div>
-<hr class="mt-0 mb-4">
+<?php
+  include "pages/account/sub-header.php";
+ ?>
 
 <!-- Payment Body -->
 <style>
@@ -89,7 +84,6 @@ tbody, td, tfoot, th, thead, tr{
     height: 30px;
 }
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 
 <div class="container-xl px-4 mt-4">
     <div class="row">

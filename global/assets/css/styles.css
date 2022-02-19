@@ -214,7 +214,7 @@ a {
   color: #eee;
 }
 
-.sub-nav-active {
+.sub-nav:active {
   font-weight: 600;
   color: #eee;
 }

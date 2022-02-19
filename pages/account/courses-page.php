@@ -1,11 +1,6 @@
-<!-- Result Menu -->
-<div class="sub-header bg-dark fs-6 fw-lighter">
-    <a href="profile.php" class="sub-nav">Profile</a>
-    <a href="courses.php" class="sub-nav sub-nav-active">Courses</a>
-    <a href="result.php" class="sub-nav">Result</a>
-    <a href="payment.php" class="sub-nav">Payment</a>
-</div>
-<hr class="mt-0 mb-4">
+<?php
+  include "pages/account/sub-header.php";
+ ?>
 
 <style>
 body, html {

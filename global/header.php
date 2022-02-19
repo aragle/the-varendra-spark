@@ -37,9 +37,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/">Home</a>
-                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="main-index.php">Home</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="board.php">Board</a>
                         </li>
@@ -47,41 +47,10 @@
                             <a class="nav-link" href="journal.php">Journal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="community.php">Community</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="forum.php">Forum</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="radio-podcast.php"> Podcast</a>
-                        </li>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Departments
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">A</a></li>
-                                <li><a class="dropdown-item" href="#">B</a></li>
-                                <li><a class="dropdown-item" href="#">C</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Clubs
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">A</a></li>
-                                <li><a class="dropdown-item" href="#">B</a></li>
-                                <li><a class="dropdown-item" href="#">C</a></li>
-                            </ul>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" style="cursor: pointer" data-bs-toggle="modal"
-                                data-bs-target="#studentPanelModal">
-                                Student Panel
-                            </a>
+                            <a class="nav-link" href="podcast.php"> Podcast</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="profile.php">{Profile}</a>
@@ -94,8 +63,3 @@
             </div>
         </nav>
     </section>
-
-    <!-- Include Modal -->
-    <?php
-        include 'modals/select-student-panel.php';
-    ?>

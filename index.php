@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Varendra Spark - Authorization to Open Project</title>
-    <link rel="stylesheet" href="temp.css" />
-    <script src="temp.js"></script>
+    <link rel="stylesheet" href="temp/temp.css" />
+    <script src="temp/temp.js"></script>
 </head>
 
 <body>
