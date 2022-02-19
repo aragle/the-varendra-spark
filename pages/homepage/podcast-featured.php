@@ -1,7 +1,7 @@
 <style>
 .feature-grad {
     background: rgb(196, 77, 41);
-    background: linear-gradient(180deg, rgba(196, 77, 41, 1) 0%, rgba(33, 33, 33, 1) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(33, 33, 33, 1) 100%);
     padding: 15px 0;
 
 }

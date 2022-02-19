@@ -1,3 +1,7 @@
+<?php
+    include 'global/header.php';
+?>
+
 <style>
 body, html {
   height: 100%;
@@ -29,6 +33,10 @@ body, html {
   <div class="middle">
     <h1>Under Construction</h1>
     <hr>
-    <p>Podcast</p>
+    <p>Messages</p>
   </div>
 </div>
+
+<?php
+    include 'global/footer.php';
+?>

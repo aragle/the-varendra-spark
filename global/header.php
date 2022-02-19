@@ -44,7 +44,7 @@
 														<a class="nav-link" aria-current="page" href="board.php">Board</a>
 												</li>
 												<li class="nav-item">
-														<a class="nav-link" href="news.php">News and Event</a>
+														<a class="nav-link" href="news.php">News</a>
 												</li>
 												<li class="nav-item">
 														<a class="nav-link" href="journal.php">Journal</a>
@@ -56,7 +56,7 @@
 														<a class="nav-link" href="podcast.php"> Podcast</a>
 												</li>
 												<li class="nav-item">
-														<a class="nav-link" href="profile.php">Message (<span style="color:#ccc;">5</span>)</a>
+														<a class="nav-link" href="messages.php">Message (<span style="color:#ccc;">5</span>)</a>
 												</li>
 												<li class="nav-item">
 														<a class="nav-link" href="profile.php">{Profile}</a>

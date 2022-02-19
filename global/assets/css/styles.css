@@ -2,14 +2,12 @@
 body {
   background-color: #202124;
   color: #bdc1c6;
+  /* #f3f5f8 */
 }
 
 /* Header or Navbar CSS */
 #header {
-  /* background-image: linear-gradient(147deg,
-      rgb(22, 22, 22) 1%,
-      rgb(196, 77, 45) 99%); */
-      background: #000;
+      background: #202124;
 }
 
 .navbar-brand {
