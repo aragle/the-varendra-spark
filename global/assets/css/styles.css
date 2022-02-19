@@ -6,9 +6,10 @@ body {
 
 /* Header or Navbar CSS */
 #header {
-  background-image: linear-gradient(147deg,
+  /* background-image: linear-gradient(147deg,
       rgb(22, 22, 22) 1%,
-      rgb(196, 77, 45) 99%);
+      rgb(196, 77, 45) 99%); */
+      background: #000;
 }
 
 .navbar-brand {

@@ -91,7 +91,7 @@ select{
     $department = "Searching...";
     $year = "Searching...";
 
-    $url = "result-view.php";
+    $url = "pages/account/result-view.php";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -218,8 +218,6 @@ select{
                               <option value="11th">11th Semester</option>
                               <option value="12th">12th Semester</option>
                             </select>
-                            <!-- <input type="text" name="semester" id="semester" placeholder="Semester"
-                                required> -->
                             <button type="submit" class="ibutton" class="btn btn-primary">View Transcript</button>
                         </form>
                     </div>
@@ -259,12 +257,8 @@ select{
                                 <td style="padding:5px 20px;">Department </td>
                                 <td style="padding:5px 20px;"><?php echo $department;?></td>
                             </tr>
-                            <!-- <tr>
-                                <td style="padding:5px 20px;">Semester </td>
-                                <td style="padding:5px 20px;"><?php echo $id;?></td>
-                            </tr> -->
                         </table>
-                        <!-- <table class="itable" style="text-align:center;padding:10px;">
+                        <table class="itable" style="text-align:center;padding:10px;">
                           <tr style="border-bottom: 1px dotted #000;">
                             <th style="padding:10px 5px" colspan="3">Semester</th>
                           </tr>
@@ -288,7 +282,7 @@ select{
                             <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "11th" ?>">11th</a></td>
                             <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "12th" ?>">12th</a></td>
                           </tr>
-                        </table> -->
+                        </table>
                         </div>
                       <iframe  id="frame" class="col-lg-9 frame" src="<?php echo $url ?>"/>
                 </div>
