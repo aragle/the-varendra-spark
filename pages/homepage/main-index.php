@@ -3,5 +3,5 @@
 ?>
 
 <?php
-    include 'pages/homepage/j-c-n-e.php';
+    include 'pages/homepage/j-n.php';
 ?>

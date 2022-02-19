@@ -1,11 +1,4 @@
 <style>
-  body {
-      margin: 0;
-      padding: 0;
-      background-color: #202124;
-      color: #bdc1c6;
-  }
-
   .block {
       margin: 250px auto;
       background: linear-gradient(0deg, #000, #272727);

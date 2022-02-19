@@ -1,15 +1,20 @@
 <!-- Footer -->
-<style>
-p {
-		margin-bottom: 0px !important;
-}
-.list-unstyled li{
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<style>
+		.footer-content-padding {
+			padding: 0 10px 5px 10px;
+		}
+		.list-unstyled li{
 		padding: 5px 0px;
 		border: 0.1px solid #333;
 }
-</style>
+		</style>
+	</head>
+	<body>
 <section id="footer">
-		<footer class="bg-dark text-center text-white">
+		<footer class="text-center text-white">
 				<div class="container p-4">
 						<!-- Social media icon links -->
 						<section class="mb-4">
@@ -106,5 +111,4 @@ p {
 		</footer>
 </section>
 </body>
-
 </html>

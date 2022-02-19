@@ -28,6 +28,6 @@ body, html {
   <div class="middle">
     <h1>Under Construction</h1>
     <hr>
-    <p>Podcast</p>
+    <p>Message</p>
   </div>
 </div>

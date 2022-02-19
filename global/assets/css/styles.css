@@ -1,13 +1,14 @@
 /* Main */
 body {
-  background-color: #202124;
-  color: #bdc1c6;
-  /* #f3f5f8 */
+  background: #23262b;
+  color: hsla(0,0%,100%,.7);
+  margin: 0;
+  padding: 0;
 }
 
 /* Header or Navbar CSS */
 #header {
-      background: #202124;
+  background-color: #262932;
 }
 
 .navbar-brand {
@@ -251,6 +252,6 @@ ul, li {
 }
 
 /* Footer */
-.footer-content-padding {
-  padding: 0 10px 5px 10px;
+#footer{
+  background-color: #262932;
 }

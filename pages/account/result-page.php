@@ -202,7 +202,7 @@ select{
                 <div class="card-body">
                     <div class="small text-muted mb-3 search_panel">Result Archive</div>
                     <div class="search_panel">
-                        <form method="post" action="result.php">
+                        <form method="post" action="results.php">
                             <input type="text" name="stu_id" id="stu_id" placeholder="Student ID" pattern="[0-9]{9}" minlength="9" maxlength="9" required autocomplete="on">
                             <select name="semester">
                               <option value="1st">1st Semester</option>
