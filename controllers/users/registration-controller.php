@@ -1,5 +1,10 @@
 <?php
 
+// Check If Already Login the Go to Root
+if(isset($_SESSION['id'])){
+  header("location: /");
+}
+
 // initializing variables
 $first_name = $last_name = $student_id = $email = $password = $password_confirm = "";
 $errors = array();

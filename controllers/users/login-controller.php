@@ -1,7 +1,12 @@
 <?php
 
-   // initializing variables
-   $error="";
+    // Check If Already Login the Go to Root
+    if(isset($_SESSION['id'])){
+      header("location: /");
+    }
+
+     // initializing variables
+     $error="";
 
       if($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -11,7 +16,7 @@
       $password = mysqli_real_escape_string($connection,$_POST['password']);
       $pass = md5($password);
 
-      $sql = "SELECT * FROM users WHERE student_id = '$student_id' and password = '$pass'";
+      $sql = "SELECT id FROM users WHERE student_id = '$student_id' and password = '$pass'";
       $result = mysqli_query($connection,$sql);
       $fetch = mysqli_fetch_array($result,MYSQLI_ASSOC);
       // $status = $row['status'];
@@ -20,12 +25,12 @@
 
       // If result matched $myusername and $mypassword, table row must be 1 row
       if($count == 1){
-        $_SESSION['student_id'] = $student_id;
-        echo "<script>alert('" . $count . " +Login Successfully!')</script>";
+        $_SESSION['id'] = $fetch['id'];
         header("location: /");
+        echo "<script>alertBox('success','Login Successful!','')</script>";
       }else {
          $error = "Invalid Student ID or Password.";
-         echo "<script>alertBox('error','Login Failed!,'Invalid Student ID or Password.')</script>";
+         echo "<script>alertBox('danger','Login Failed!','Invalid Student ID or Password.')</script>";
       }
    }
  }

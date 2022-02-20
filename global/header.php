@@ -34,10 +34,9 @@
 					var alertStyle = document.getElementById('alertStyle');
 					var alertName = document.getElementById('alertName');
 					var alertMessage = document.getElementById('alertMessage');
-					var alertClassName = 'alert-'.concat(alertType);
 
 					alertStyle.removeAttribute("style");
-					alertStyle.classList.add(alertClassName);
+					alertStyle.classList.add('alert-'.concat(alertType));
 
 					alertName.innerHTML = alertTitle;
 					alertMessage.innerHTML = alertDescription;
@@ -74,13 +73,13 @@
 														<a class="nav-link" href="podcast"> Podcast</a>
 												</li>
 												<?php
-												 if(isset($_SESSION['student_id'])){
+												 if(isset($_SESSION['id'])){
 														 echo '<a class="nav-link" href="messages">Message (<span class="text-danger">5</span>)</a>';
 												 }
 												?>
 												<li class="nav-item">
 													<?php
-													 if(isset($_SESSION['student_id'])){
+													 if(isset($_SESSION['id'])){
 															 echo '<a class="nav-link" href="logout">Logout</a>';
 													 }
 													?>
@@ -88,9 +87,9 @@
 										</ul>
 										<div class="sign-item login-button">
 											<?php
-												 if(isset($_SESSION['student_id'])){
+												 if(isset($_SESSION['id'])){
 
-														$sql = mysqli_query($connection, "SELECT * FROM users WHERE student_id='$_SESSION[student_id]'") or die(mysqli_error());
+														$sql = mysqli_query($connection, "SELECT * FROM users WHERE id='$_SESSION[id]'") or die(mysqli_error());
 														$fetch = mysqli_fetch_array($sql);
 
 														echo "<a class='sign-link' href='profile'>" . $fetch['first_name'] . " " . $fetch['last_name'] . "</a>";
@@ -106,7 +105,7 @@
 
 				<!-- Alert -->
 				<div id="alertStyle" class="alert alert-dismissible fade show" style="display:none">
-				    <strong id="alertName">Wah!</strong> <span id="alertMessage">This is for you.</span>
+				    <strong id="alertName"></strong> <span id="alertMessage"></span>
 				    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
 				</div>
 </div>
