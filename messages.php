@@ -9,8 +9,5 @@
 
 <?php
     include 'pages/messages/messages-index.php';
-?>
-
-<?php
     include 'global/footer.php';
 ?>

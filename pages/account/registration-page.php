@@ -15,7 +15,7 @@
                             <h2 class="fw-bold mb-2 site-name">The Varendra Spark</h2>
                             <p class="text-white-50 mb-5">Create your account here!</p>
 
-                            <form action="registration.php" method="post">
+                            <form action="registration" method="post">
                               <?php
                               foreach ($errors as $issues){
                                   echo "<span style='color:red;'> * </span> " . $issues . "<br>";
@@ -23,7 +23,7 @@
                                ?>
                                <br>
                                 <div class="form-outline mb-4 col-5 float-end">
-                                    <input type="text" name="lastname" id="lastname" class="form-control form-control-lg" autocomplete="on" />
+                                    <input type="text" name="lastname" id="lastname" class="form-control form-control-lg"/>
                                     <label class="form-label" for="lastname">Last Name</label>
                                 </div>
 
@@ -66,7 +66,7 @@
                                     <button type="submit" class="btn btn-outline-light btn-lg submit-button px-5" name="registration" id="registration">Register</button>
                                 </div>
 
-                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.php"
+                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login"
                                         class="fw-bold text-white-50">[Login Here]</a></p>
                             </form>
                         </div>

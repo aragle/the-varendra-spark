@@ -27,6 +27,12 @@ a{
 
 </style>
 
+
+<!-- Sub Menu -->
+<div class="sub-header fs-6 fw-lighter">
+    <a class="sub-nav">Forum</a>
+</div>
+
 <div class="forum-container">
       <div class="row">
         <!-- Main content -->

@@ -30,7 +30,7 @@
                                     <label class="form-label" for="password">Password</label>
                                 </div>
 
-                                <p class="mb-5 text-end"><a class="text-white-50" href="recovery.php">Forgot
+                                <p class="mb-5 text-end"><a class="text-white-50" href="recovery">Forgot
                                         password?</a></p>
 
                                 <button name="login" class="btn btn-outline-light btn-lg px-5 submit-button"
@@ -39,7 +39,7 @@
                         </div>
 
                         <div>
-                            <p class="mb-0 text-white-50 text-center">Don't have an account? <a href="registration.php"
+                            <p class="mb-0 text-white-50 text-center">Don't have an account? <a href="registration"
                                     class="text-white-50 fw-bold">[Register Here]</a></p>
                         </div>
 

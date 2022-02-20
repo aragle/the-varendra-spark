@@ -313,7 +313,7 @@
                     <h1 class="menu-title"> News </h1>
                     <rssapp-feed id="fwSsdhQhVMkBLpO2"></rssapp-feed>
                     <script src="https://widget.rss.app/v1/feed.js" type="text/javascript" async></script>
-                    <a href="news.php">
+                    <a href="news">
                         <p class="menu-foot">See More News</p>
                     </a>
                 </div>

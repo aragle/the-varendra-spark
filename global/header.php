@@ -43,35 +43,32 @@
 								<div class="collapse navbar-collapse" id="navbarNavDropdown">
 										<ul class="navbar-nav">
 												<li class="nav-item">
-														<a class="nav-link" aria-current="page" href="main-index.php">Home</a>
+														<a class="nav-link" aria-current="page" href="main-index">Home</a>
 												</li>
 												<li class="nav-item">
-														<a class="nav-link" aria-current="page" href="board.php">Board</a>
+														<a class="nav-link" aria-current="page" href="board">Board</a>
 												</li>
 												<li class="nav-item">
-														<a class="nav-link" href="news.php">News</a>
+														<a class="nav-link" href="news">News</a>
 												</li>
 												<li class="nav-item">
-														<a class="nav-link" href="journal.php">Journal</a>
+														<a class="nav-link" href="journal">Journal</a>
 												</li>
 												<li class="nav-item">
-														<a class="nav-link" href="forum.php">Forum</a>
+														<a class="nav-link" href="forum">Forum</a>
 												</li>
 												<li class="nav-item">
-														<a class="nav-link" href="podcast.php"> Podcast</a>
+														<a class="nav-link" href="podcast"> Podcast</a>
 												</li>
 												<?php
 												 if(isset($_SESSION['student_id'])){
-														 echo '<a class="nav-link" href="messages.php">Message (<span class="text-danger">5</span>)</a>';
+														 echo '<a class="nav-link" href="messages">Message (<span class="text-danger">5</span>)</a>';
 												 }
 												?>
-												<!-- <li class="nav-item">
-														<a class="nav-link" href="profile.php">{Profile}</a>
-												</li> -->
 												<li class="nav-item">
 													<?php
 													 if(isset($_SESSION['student_id'])){
-															 echo '<a class="nav-link" href="controllers/logout.php">Logout</a>';
+															 echo '<a class="nav-link" href="logout">Logout</a>';
 													 }
 													?>
 												</li>
@@ -83,16 +80,15 @@
 														$sql = mysqli_query($connection, "SELECT * FROM users WHERE student_id='$_SESSION[student_id]'") or die(mysqli_error());
 														$fetch = mysqli_fetch_array($sql);
 
-														echo "<a class='sign-link' href='profile.php'>" . $fetch['first_name'] . " " . $fetch['last_name'] . "</a>";
+														echo "<a class='sign-link' href='profile'>" . $fetch['first_name'] . " " . $fetch['last_name'] . "</a>";
 												 }else{
-													 echo "<a class='sign-link' href='logout.php'>Login</a>";
+													 echo "<a class='sign-link' href='login'>Login</a>";
 												 }
 											?>
 										</div>
 								</div>
 						</div>
 				</nav>
-<div style="height: 2px;background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, #202124 100%);  box-shadow: 0px -30px 33px #ccc;"></div>
-
+				<div style="height: 2px;background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, #202124 100%);  box-shadow: 0px -30px 33px #ccc;"></div>
 </div>
-		</section>
+</section>

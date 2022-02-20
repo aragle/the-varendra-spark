@@ -1,7 +1,4 @@
 <?php
-// connect to the database
-include 'controllers/config.php';
-// include 'controllers/session.php';
 
 // initializing variables
 $first_name = $last_name = $student_id = $email = $password = $password_confirm = "";

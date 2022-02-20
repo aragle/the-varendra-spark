@@ -1,13 +1,11 @@
 <?php
-  include "controllers/config.php";
-  // include "controllers/session.php";
-  include 'global/header.php';
-
+   // initializing variables
    $error="";
 
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      if($_SERVER["REQUEST_METHOD"] == "POST") {
+
       // username and password sent from form
-if (isset($_POST['login'])) {
+      if (isset($_POST['login'])) {
       $student_id = mysqli_real_escape_string($connection,$_POST['student_id']);
       $password = mysqli_real_escape_string($connection,$_POST['password']);
       $pass = md5($password);
@@ -20,7 +18,6 @@ if (isset($_POST['login'])) {
       $count = mysqli_num_rows($result);
 
       // If result matched $myusername and $mypassword, table row must be 1 row
-
       if($count == 1){
         $_SESSION['student_id'] = $student_id;
         echo "<script>alert('" . $count . " +Login Successfully!')</script>";

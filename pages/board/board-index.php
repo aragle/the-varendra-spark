@@ -55,6 +55,12 @@
   }
 </style>
 
+
+<!-- Sub Menu -->
+<div class="sub-header fs-6 fw-lighter">
+    <a class="sub-nav">Treasure Board</a>
+</div>
+
 <div id="treature-link" class="block">
     <p>
         open ↴ <br>
