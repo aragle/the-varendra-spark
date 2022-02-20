@@ -15,6 +15,11 @@
     .container {
         max-width: 100% !important;
     }
+
+    .content-border{
+      margin-top: 20px;
+    }
+
 }
 
 .content-border {

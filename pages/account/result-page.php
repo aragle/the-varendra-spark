@@ -91,7 +91,7 @@ select{
     $department = "Searching...";
     $year = "Searching...";
 
-    $url = "pages/account/result-view.php";
+    $url = "pages/account/result-view";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
