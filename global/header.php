@@ -1,5 +1,5 @@
 <?php
-  include "controllers/config.php";
+	include "controllers/config.php";
 	session_start();
 ?>
 
@@ -13,8 +13,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>The Varendra Spark</title>
-		<!-- <meta name="description" content="X">
-		<meta name="keywords" content="X">
+		<meta name="description" content="A Varendra University Community">
+		<!-- <meta name="keywords" content="X">
 		<meta name="author" content="X"> -->
 
 		<!-- Link CSS -->
@@ -60,30 +60,39 @@
 												<li class="nav-item">
 														<a class="nav-link" href="podcast.php"> Podcast</a>
 												</li>
-												<li class="nav-item">
-														<a class="nav-link" href="messages.php">Message (<span class="text-danger">5</span>)</a>
-												</li>
-												<li class="nav-item">
+												<?php
+												 if(isset($_SESSION['student_id'])){
+														 echo '<a class="nav-link" href="messages.php">Message (<span class="text-danger">5</span>)</a>';
+												 }
+												?>
+												<!-- <li class="nav-item">
 														<a class="nav-link" href="profile.php">{Profile}</a>
-												</li>
+												</li> -->
 												<li class="nav-item">
-														<a class="nav-link" href="controllers/logout.php">{Logout}</a>
+													<?php
+													 if(isset($_SESSION['student_id'])){
+															 echo '<a class="nav-link" href="controllers/logout.php">Logout</a>';
+													 }
+													?>
 												</li>
 										</ul>
 										<div class="sign-item login-button">
-                      <?php
-  											 if(isset($_SESSION['student_id'])){
+											<?php
+												 if(isset($_SESSION['student_id'])){
 
-                            $sql = mysqli_query($connection, "SELECT * FROM users WHERE student_id='$_SESSION[student_id]'") or die(mysqli_error());
-                   				  $fetch = mysqli_fetch_array($sql);
+														$sql = mysqli_query($connection, "SELECT * FROM users WHERE student_id='$_SESSION[student_id]'") or die(mysqli_error());
+														$fetch = mysqli_fetch_array($sql);
 
-                            echo "<a class='sign-link' href='profile.php'>" . $fetch['first_name'] . " " . $fetch['last_name'] . "</a>";
-  											 }else{
-  												 echo "<a class='sign-link' href='login.php'>Login</a>";
-  											 }
+														echo "<a class='sign-link' href='profile.php'>" . $fetch['first_name'] . " " . $fetch['last_name'] . "</a>";
+												 }else{
+													 echo "<a class='sign-link' href='logout.php'>Login</a>";
+												 }
 											?>
 										</div>
 								</div>
 						</div>
 				</nav>
+<div style="height: 2px;background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, #202124 100%);  box-shadow: 0px -30px 33px #ccc;"></div>
+
+</div>
 		</section>

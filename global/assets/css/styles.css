@@ -199,7 +199,7 @@ a {
 .sub-header {
   padding: 15px;
   color: #69707a;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, #202124 10%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, #202124 5%);
   border-bottom: 1px dotted #eee;
 }
 
