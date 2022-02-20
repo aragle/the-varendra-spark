@@ -21,7 +21,7 @@
       if($count == 1){
         $_SESSION['student_id'] = $student_id;
         echo "<script>alert('" . $count . " +Login Successfully!')</script>";
-        header("location: main-index.php");
+        header("location: /");
 
       }else {
          $error = "Invalid Student ID or Password.";

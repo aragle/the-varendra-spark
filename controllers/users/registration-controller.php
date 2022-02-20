@@ -53,7 +53,7 @@ if (isset($_POST['registration'])) {
     $_SESSION['name'] = $name;
   	$_SESSION['email'] = $email;
   	$_SESSION['success'] = true;
-  	header('location: login.php');
+  	header('location: login');
   }
 }
 
