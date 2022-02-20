@@ -27,6 +27,22 @@
 
 		<!-- Link JS -->
 		<script src="global/assets/js/bootstrap.min.js"></script>
+
+		<!-- Alert Model -->
+		<script type='text/javascript'>
+			function alertBox(alertType, alertTitle, alertDescription) {
+					var alertStyle = document.getElementById('alertStyle');
+					var alertName = document.getElementById('alertName');
+					var alertMessage = document.getElementById('alertMessage');
+					var alertClassName = 'alert-'.concat(alertType);
+
+					alertStyle.removeAttribute("style");
+					alertStyle.classList.add(alertClassName);
+
+					alertName.innerHTML = alertTitle;
+					alertMessage.innerHTML = alertDescription;
+				}
+		</script>
 </head>
 
 <body>
@@ -42,9 +58,6 @@
 								</button>
 								<div class="collapse navbar-collapse" id="navbarNavDropdown">
 										<ul class="navbar-nav">
-												<!-- <li class="nav-item">
-														<a class="nav-link" aria-current="page" href="/">Home</a>
-												</li> -->
 												<li class="nav-item">
 														<a class="nav-link" aria-current="page" href="board">Board</a>
 												</li>
@@ -90,5 +103,11 @@
 						</div>
 				</nav>
 				<div style="height: 2px;background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, #202124 100%);  box-shadow: 0px -30px 33px #ccc;"></div>
+
+				<!-- Alert -->
+				<div id="alertStyle" class="alert alert-dismissible fade show" style="display:none">
+				    <strong id="alertName">Wah!</strong> <span id="alertMessage">This is for you.</span>
+				    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+				</div>
 </div>
 </section>

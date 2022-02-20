@@ -15,7 +15,7 @@
 
                             <h2 class="fw-bold mb-2 site-name">The Varendra Spark</h2>
                             <p class="text-white-50 mb-5">Please enter your login and password!</p>
-                            <form action="login.php" method="post">
+                            <form action="login" method="post">
                               <?php
                                   echo "<span class='text-danger'> " . $error . "</span><br>";
                                ?>

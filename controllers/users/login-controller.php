@@ -1,4 +1,5 @@
 <?php
+
    // initializing variables
    $error="";
 
@@ -22,9 +23,9 @@
         $_SESSION['student_id'] = $student_id;
         echo "<script>alert('" . $count . " +Login Successfully!')</script>";
         header("location: /");
-
       }else {
          $error = "Invalid Student ID or Password.";
+         echo "<script>alertBox('error','Login Failed!,'Invalid Student ID or Password.')</script>";
       }
    }
  }
