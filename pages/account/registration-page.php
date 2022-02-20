@@ -16,11 +16,24 @@
                             <p class="text-white-50 mb-5">Create your account here!</p>
 
                             <form action="registration" method="post">
-                              <?php
+                              <div class="alert alert-danger alert-dismissible fade show">
+                                    <?php
+                                        foreach ($errors as $issues){
+                                            echo "<span style='color:red;'> * </span> " . $issues . "<br>";
+                                        }
+                                    ?>
+                                  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                              </div>
+
+
+
+
+
+                              <!-- <?php
                               foreach ($errors as $issues){
                                   echo "<span style='color:red;'> * </span> " . $issues . "<br>";
                               }
-                               ?>
+                               ?> -->
                                <br>
                                 <div class="form-outline mb-4 col-5 float-end">
                                     <input type="text" name="lastname" id="lastname" class="form-control form-control-lg"/>
