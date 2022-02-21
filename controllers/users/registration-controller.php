@@ -60,9 +60,23 @@ if (isset($_POST['registration'])) {
   if (count($errors) == 0) {
   	$pass = md5($password);
 
-    //generate token
-    $otp = rand('0000000','9999999');
-    $token = md5($otp);
+    //generate verification code and token
+    // function tokenGenerator($length) {
+    //     $characters = '0123456789abcdefghijklmnopqrstuvwxyz';
+    //     $charactersLength = strlen($characters);
+    //     $token = '';
+    //     for ($i = 0; $i < $length; $i++) {
+    //         $token .= $characters[rand(0, $charactersLength - 1)];
+    //     }
+    //     return $token;
+    // }
+
+    $code = rand('0000000','9999999');
+
+    $studentid = "192311018";
+    $tokenPlus = substr($studentid, -4);
+
+    $token = md5($code+$tokenPlus);
 
     //Initialize PHP Mailer and set SMTP as mailing protocol
     $mail = new PHPMailer();
@@ -78,7 +92,6 @@ if (isset($_POST['registration'])) {
     $mail->Username   = "varendraspark@gmail.com"; // Email for test mailer
     $mail->Password   = "VUtvs#000"; // Password for test mailer
 
-
     // Mail Body
     $mail->IsHTML(true);
     $mail->AddAddress($email,$_POST['firstname']." ".$_POST['lastname']);
@@ -89,7 +102,7 @@ if (isset($_POST['registration'])) {
     $content = "
     Hello, ".$_POST['firstname']." ".$_POST['lastname']."!<br>
     Thank you for registration. Please verify your email to continue your journey with us.<br><br>
-    Your Verification Code is <b>".$otp."</b><br>
+    Your Verification Code is <b>".$code."</b><br>
     Your token is <b>".$token."</b><br><br>
     Account Info:<br>
     Student ID: ".$_POST['stu_id']."<br>
