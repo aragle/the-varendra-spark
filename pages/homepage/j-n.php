@@ -116,8 +116,8 @@
                     <!-- Article data -->
                     <div class="row mb-3">
                                   <div class="col-6">
-                                      <i class="fas fa-plane"></i>
-                                      Featured
+                                      <i class="fas fa-star"></i>
+                                      Featured Post
                                   </div>
 
                                   <div class="col-6 text-end">
