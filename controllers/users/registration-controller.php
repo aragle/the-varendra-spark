@@ -89,16 +89,17 @@ if (isset($_POST['registration'])) {
     $content = "
     Hello, ".$_POST['firstname']." ".$_POST['lastname']."!<br>
     Thank you for registration. Please verify your email to continue your journey with us.<br><br>
-    Your Verification Code is ".$otp."<br>
-    Your token is ".$token."<br><br>
+    Your Verification Code is <b>".$otp."</b><br>
+    Your token is <b>".$token."</b><br><br>
     Account Info:<br>
     Student ID: ".$_POST['stu_id']."<br>
     Password: ".$_POST['password'];
 
 
     // Exception Handler
-    // $mail->MsgHTML($content);
-
+    echo "<div style='disply:none'>"
+    .$mail->MsgHTML($content);.
+    "</div>"
 
     if(!$mail->Send()) {
         echo "<script>alertBox('danger','Failed!','Error while sending Email.')</script>";
