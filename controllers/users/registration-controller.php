@@ -70,7 +70,7 @@ if (isset($_POST['registration'])) {
     $mail->Mailer = "smtp";
 
     //Connect to SMTP
-    $mail->SMTPDebug  = 1;
+    // $mail->SMTPDebug  = 1;
     $mail->SMTPAuth   = TRUE;
     $mail->SMTPSecure = "tls";
     $mail->Port       = 587;
@@ -95,15 +95,11 @@ if (isset($_POST['registration'])) {
     Student ID: ".$_POST['stu_id']."<br>
     Password: ".$_POST['password'];
 
-
     // Exception Handler
-    echo "<div style='disply:none'>"
-    .$mail->MsgHTML($content);.
-    "</div>"
-
+    $mail->MsgHTML($content);
     if(!$mail->Send()) {
         echo "<script>alertBox('danger','Failed!','Error while sending Email.')</script>";
-      // var_dump($mail);
+        //var_dump($mail);
     } else {
         echo "<script>alertBox('primary','Accound Created!','Verify your email.')</script>";
 
