@@ -60,30 +60,9 @@ if (isset($_POST['registration'])) {
   if (count($errors) == 0) {
   	$pass = md5($password);
 
-    // Set account status as Deactive
-    $status = 0;
-
     //generate token
     $otp = rand('0000000','9999999');
     $token = md5($otp);
-
-    $permission = 9; // 9 = member
-
-
-  	$query = "INSERT INTO users (first_name, last_name, student_id, email, password,status,token,permission)
-  			  VALUES('$first_name', '$last_name', '$student_id', '$email', '$pass', '$status', '$token','$permission')";
-  	mysqli_query($connection, $query);
-
-    $sql = "Select id from users where student_id = '$student_id'";
-    $result = mysqli_query($connection, $sql);
-    $fetch = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $_SESSION['id'] = $fetch['id'];
-
-
-
-
-
-
 
     //Initialize PHP Mailer and set SMTP as mailing protocol
     $mail = new PHPMailer();
@@ -100,7 +79,6 @@ if (isset($_POST['registration'])) {
     $mail->Password   = "VUtvs#000"; // Password for test mailer
 
 
-
     // Mail Body
     $mail->IsHTML(true);
     $mail->AddAddress($email,$_POST['firstname']." ".$_POST['lastname']);
@@ -109,17 +87,13 @@ if (isset($_POST['registration'])) {
     // $mail->AddCC("cc-recipient-email@domain", "cc-recipient-name");
     $mail->Subject = "Confirm your email";
     $content = "
-    Hello, "$_POST['firstname']." ".$_POST['lastname'])."!<br>
+    Hello, ".$_POST['firstname']." ".$_POST['lastname']."!<br>
     Thank you for registration. Please verify your email to continue your journey with us.<br><br>
     Your Verification Code is ".$otp."<br>
-    Your token is ".$token;."<br><br>
+    Your token is ".$token."<br><br>
     Account Info:<br>
-    Student ID: ".$_POST['student_id'])."
-    Password: ".$_POST['password'])."
-    ";
-
-
-
+    Student ID: ".$_POST['stu_id']."
+    Password: ".$_POST['password'];
 
 
     // Exception Handler
@@ -127,10 +101,21 @@ if (isset($_POST['registration'])) {
 
 
     if(!$mail->Send()) {
-        echo "<script>alertBox('danger','Failed!','Error while sending Email.l.')</script>";
+        echo "<script>alertBox('danger','Failed!','Error while sending Email.')</script>";
       // var_dump($mail);
     } else {
         echo "<script>alertBox('primary','Accound Created!','Verify your email.')</script>";
+
+        $status = 0; // Set account status as Deactive
+        $permission = 9; // 9 for member or Generl users
+        $query = "INSERT INTO users (first_name, last_name, student_id, email, password,status,token,permission)
+                  VALUES('$first_name', '$last_name', '$student_id', '$email', '$pass', '$status', '$token','$permission')";
+        mysqli_query($connection, $query);
+
+        $sql = "Select id from users where student_id = '$student_id'";
+        $result = mysqli_query($connection, $sql);
+        $fetch = mysqli_fetch_array($result,MYSQLI_ASSOC);
+        $_SESSION['id'] = $fetch['id'];
     }
 
   	// header('location: registration');
