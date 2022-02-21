@@ -108,8 +108,17 @@ if (isset($_POST['registration'])) {
     // $mail->AddReplyTo("reply-email@domain", "reply-name");
     // $mail->AddCC("cc-recipient-email@domain", "cc-recipient-name");
     $mail->Subject = "Confirm your email";
-    $content = "Your Verification Code is ".$otp
-    ."<br> Your token is ".$token;
+    $content = "
+    Hello, "$_POST['firstname']." ".$_POST['lastname'])."!<br>
+    Thank you for registration. Please verify your email to continue your journey with us.<br><br>
+    Your Verification Code is ".$otp."<br>
+    Your token is ".$token;."<br><br>
+    Account Info:<br>
+    Student ID: ".$_POST['student_id'])."
+    Password: ".$_POST['password'])."
+    ";
+
+
 
 
 
