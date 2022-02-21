@@ -107,7 +107,7 @@
                     <!-- Featured image -->
                     <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
                         data-mdb-ripple-color="light">
-                        <img src="https://mdbootstrap.com/img/new/fluid/city/113.jpg" class="img-fluid" />
+                        <img src="https://image.cnbcfm.com/api/v1/image/106911087-16263029762021-07-12t182451z_1049474836_rc26jo9ua1af_rtrmadp_0_fintech-crypto-flows.jpeg?v=1626462384" class="img-fluid" />
                         <a href="#!">
                             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                         </a>
@@ -115,17 +115,19 @@
 
                     <!-- Article data -->
                     <div class="row mb-3">
-                        <div class="col-12">
-                            <a href="" class="text-info">
-                                <i class="fas fa-star"></i>
-                                Featured
-                            </a>
-                        </div>
-                    </div>
+                                  <div class="col-6">
+                                      <i class="fas fa-plane"></i>
+                                      Featured
+                                  </div>
+
+                                  <div class="col-6 text-end">
+                                    <p> @satosi-nakamoto</p>
+                                  </div>
+                                </div>
 
                     <!-- Article title and description -->
                     <a href="" class="text-white-50">
-                        <h5>This is title of the news</h5>
+                        <h5>Bitcoin: A Peer-to-Peer Electronic Cash System</h5>
 
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
