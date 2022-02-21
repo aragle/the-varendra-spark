@@ -114,16 +114,17 @@ if (isset($_POST['registration'])) {
 
 
     // Exception Handler
-    $mail->MsgHTML($content);
+    // $mail->MsgHTML($content);
+
+
     if(!$mail->Send()) {
-      echo "Error while sending Email.";
-      var_dump($mail);
+        echo "<script>alertBox('danger','Failed!','Error while sending Email.l.')</script>";
+      // var_dump($mail);
     } else {
-      echo "Email sent successfully";
+        echo "<script>alertBox('primary','Accound Created!','Verify your email.')</script>";
     }
 
   	// header('location: registration');
-    echo "<script>alertBox('primary','Accound Created!','Verify your email.')</script>";
   }
 }
 ?>
