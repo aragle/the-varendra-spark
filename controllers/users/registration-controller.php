@@ -73,10 +73,9 @@ if (isset($_POST['registration'])) {
 
     $code = rand('0000000','9999999');
 
-    $studentid = "192311018";
-    $tokenPlus = substr($studentid, -4);
+    $tokenPlus = substr($student_id, -4);
 
-    $token = md5($code+$tokenPlus);
+    $token = md5($code+(int)$tokenPlus);
 
     //Initialize PHP Mailer and set SMTP as mailing protocol
     $mail = new PHPMailer();

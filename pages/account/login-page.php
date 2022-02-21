@@ -5,7 +5,7 @@
 
 <!-- Login -->
 <section id="login" class="sign">
-    <div class="container py-5 h-100">
+    <div class="container py-3 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-8 col-lg-6">
                 <div class="card bg-dark text-white">
@@ -41,6 +41,8 @@
                         <div>
                             <p class="mb-0 text-white-50 text-center">Don't have an account? <a href="registration"
                                     class="text-white-50 fw-bold">[Register Here]</a></p>
+                            <p class="mb-0 text-white-50 text-center">Have an inactive account? <a href="activation"
+                                            class="text-white-50 fw-bold">[Activate Here]</a></p>
                         </div>
 
                     </div>
