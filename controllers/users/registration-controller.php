@@ -1,22 +1,18 @@
 <?php
 
 // Check If Already Login the Go to Root
-if(isset($_SESSION['id'])){
-  header("location: /");
-}
+// if(isset($_SESSION['id'])){
+//   header("location: /");
+// }
+
+require 'plugins/phpmailer/src/PHPMailer.php';
+require 'plugins/phpmailer/src/SMTP.php';
+require 'plugins/phpmailer/src/Exception.php';
 
 //Import PHPMailer classes into the global namespace
-//These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-
-//Load Composer's autoloader
-require 'plugins/vendor/autoload.php';
-
-require 'plugins/vendor/phpmailer/phpmailer/src/Exception.php';
-require 'plugins/vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require 'plugins/vendor/phpmailer/phpmailer/src/SMTP.php';
 
 
 // initializing variables
@@ -81,6 +77,7 @@ if (isset($_POST['registration'])) {
     $sql = "Select id from users where student_id = '$student_id'";
     $result = mysqli_query($connection, $sql);
     $fetch = mysqli_fetch_array($result,MYSQLI_ASSOC);
+    $_SESSION['id'] = $fetch['id'];
 
 
 
@@ -98,21 +95,21 @@ if (isset($_POST['registration'])) {
     $mail->SMTPAuth   = TRUE;
     $mail->SMTPSecure = "tls";
     $mail->Port       = 587;
-    $mail->Host       = "smtp-relay.sendinblue.com";
-    $mail->Username   = "varendraspark@gmail.com";
-    $mail->Password   = "xmX6Ycg5aPqDFJVM";
+    $mail->Host       = "smtp.gmail.com";
+    $mail->Username   = "varendraspark@gmail.com"; // Email for test mailer
+    $mail->Password   = "VUtvs#000"; // Password for test mailer
 
 
 
     // Mail Body
     $mail->IsHTML(true);
-    $mail->AddAddress($email, "Spec Dude");
-    $mail->SetFrom("noreply@thevarendraspark.com", "The Varendra Spark");
-    $mail->AddReplyTo("reply-to-email@domain", "reply-to-name");
-    $mail->AddCC("cc-recipient-email@domain", "cc-recipient-name");
-    $mail->Subject = "Confirm Test is Test Email sent via Gmail SMTP Server using PHP Mailer";
-    $content = "<b>This is a Test Email sent via Gmail SMTP Server using PHP mailer class.</b> Code is :". $otp
-    . "<br> Token is :". $token;
+    $mail->AddAddress($email,$_POST['firstname']." ".$_POST['lastname']);
+    $mail->SetFrom("varendraspark@gmail.com", "The Varendra Spark");
+    // $mail->AddReplyTo("reply-email@domain", "reply-name");
+    // $mail->AddCC("cc-recipient-email@domain", "cc-recipient-name");
+    $mail->Subject = "Confirm your email";
+    $content = "Your Verification Code is ".$otp
+    ."<br> Your token is ".$token;
 
 
 
@@ -125,14 +122,8 @@ if (isset($_POST['registration'])) {
       echo "Email sent successfully";
     }
 
-
-
-
-
-  	$_SESSION['id'] = $fetch['id'];
-
-  	// header('location: activation');
-    alert("ok");
+  	// header('location: registration');
+    echo "<script>alertBox('primary','Accound Created!','Verify your email.')</script>";
   }
 }
 ?>

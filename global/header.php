@@ -92,7 +92,7 @@
 														$sql = mysqli_query($connection, "SELECT * FROM users WHERE id='$_SESSION[id]'") or die(mysqli_error());
 														$fetch = mysqli_fetch_array($sql);
 
-														echo "<a class='sign-link' href='profile'>" . $fetch['first_name'] . " " . $fetch['last_name'] . "</a>";
+													 echo "<a class='sign-link' href='profile'>" . $fetch['first_name'] . " " . $fetch['last_name'] . "</a>";
 												 }else{
 													 echo "<a class='sign-link' href='login'>Login</a>";
 												 }
@@ -103,7 +103,7 @@
 				</nav>
 				<div style="height: 2px;background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, #202124 100%);  box-shadow: 0px -30px 33px #ccc;"></div>
 
-				<!-- Alert -->
+				<!-- Alert Panel -->
 				<div id="alertStyle" class="alert alert-dismissible fade show" style="display:none">
 				    <strong id="alertName"></strong> <span id="alertMessage"></span>
 				    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>

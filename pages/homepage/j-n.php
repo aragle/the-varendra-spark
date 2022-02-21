@@ -316,7 +316,7 @@
 
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 sidebar-news content-border">
                     <h1 class="menu-title"> News </h1>
-                    <rssapp-feed id="fwSsdhQhVMkBLpO2"></rssapp-feed>
+                    <rssapp-feed id="VUa5K3aJf31KZCtz"></rssapp-feed>
                     <script src="https://widget.rss.app/v1/feed.js" type="text/javascript" async></script>
                     <a href="news">
                         <p class="menu-foot">See More News</p>
