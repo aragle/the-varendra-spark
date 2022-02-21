@@ -56,14 +56,13 @@ select{
 }
 
 .frame {
-    width: 50%;
-    height: 450px;
-    margin: 80px 0 0 150px;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 420px;
 }
 
 .itable {
     border: 1px solid #bbb;
-    width: 100%;
     color: black;
     padding: 10px;
     margin: 10px 0px;
@@ -72,8 +71,8 @@ select{
 @media screen and (max-width: 1080px) {
     .frame {
     width: 100%;
+    margin: 0 auto;
     height: 450px;
-    margin: 0;
     }
 }
 }
@@ -225,11 +224,13 @@ select{
             </div>
         </div>
     </div>
+
+
     <div class="card card-header-actions mb-4"  style="background-color:#ddd;">
         <div class="card-header">
             <div class="container-xl px-4 mt-4">
                 <div class="row">
-                    <div class="right col-lg-3">
+                    <!-- <div class="right col-lg-3">
                         <img class="mb-1" src="https://static.thenounproject.com/png/3938453-200.png"
                             height="150px" width="150px" alt="Target" style="margin: 0 auto;display: flex;">
                         <table class="itable">
@@ -283,8 +284,10 @@ select{
                             <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "12th" ?>">12th</a></td>
                           </tr>
                         </table>
-                        </div>
-                      <iframe  id="frame" class="col-lg-9 frame" src="<?php echo $url ?>"/>
+                        </div> -->
+                        <div class="right col-lg-12 text-black text-center p-3"><?php echo $id;?> - <?php echo $semester;?> Semester</div>
+                        <hr style="background:#000">
+                      <iframe  id="frame" class="frame" src="<?php echo $url ?>"/>
                 </div>
             </div>
         </div>
