@@ -92,7 +92,7 @@ if (isset($_POST['registration'])) {
     Your Verification Code is ".$otp."<br>
     Your token is ".$token."<br><br>
     Account Info:<br>
-    Student ID: ".$_POST['stu_id']."
+    Student ID: ".$_POST['stu_id']."<br>
     Password: ".$_POST['password'];
 
 
