@@ -5,6 +5,20 @@ if(isset($_SESSION['id'])){
   header("location: /");
 }
 
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'plugins/vendor/autoload.php';
+
+require 'plugins/vendor/phpmailer/phpmailer/src/Exception.php';
+require 'plugins/vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require 'plugins/vendor/phpmailer/phpmailer/src/SMTP.php';
+
+
 // initializing variables
 $first_name = $last_name = $student_id = $email = $password = $password_confirm = "";
 $errors = array();
@@ -48,18 +62,77 @@ if (isset($_POST['registration'])) {
 
   // Finally, register user if there are no errors in the form
   if (count($errors) == 0) {
-  	$pass = md5($password);//encrypt the password before saving in the database
+  	$pass = md5($password);
 
-  	$query = "INSERT INTO users (first_name, last_name, student_id, email, password)
-  			  VALUES('$first_name', '$last_name', '$student_id', '$email', '$pass')";
+    // Set account status as Deactive
+    $status = 0;
+
+    //generate token
+    $otp = rand('0000000','9999999');
+    $token = md5($otp);
+
+    $permission = 9; // 9 = member
+
+
+  	$query = "INSERT INTO users (first_name, last_name, student_id, email, password,status,token,permission)
+  			  VALUES('$first_name', '$last_name', '$student_id', '$email', '$pass', '$status', '$token','$permission')";
   	mysqli_query($connection, $query);
-    $name = $first_name . " " . $last_name;
-  	$_SESSION['student_id'] = $student_id;
-    $_SESSION['name'] = $name;
-  	$_SESSION['email'] = $email;
-  	$_SESSION['success'] = true;
-  	header('location: login');
+
+    $sql = "Select id from users where student_id = '$student_id'";
+    $result = mysqli_query($connection, $sql);
+    $fetch = mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+
+
+
+
+
+
+    //Initialize PHP Mailer and set SMTP as mailing protocol
+    $mail = new PHPMailer();
+    $mail->IsSMTP();
+    $mail->Mailer = "smtp";
+
+    //Connect to SMTP
+    $mail->SMTPDebug  = 1;
+    $mail->SMTPAuth   = TRUE;
+    $mail->SMTPSecure = "tls";
+    $mail->Port       = 587;
+    $mail->Host       = "smtp-relay.sendinblue.com";
+    $mail->Username   = "varendraspark@gmail.com";
+    $mail->Password   = "xmX6Ycg5aPqDFJVM";
+
+
+
+    // Mail Body
+    $mail->IsHTML(true);
+    $mail->AddAddress($email, "Spec Dude");
+    $mail->SetFrom("noreply@thevarendraspark.com", "The Varendra Spark");
+    $mail->AddReplyTo("reply-to-email@domain", "reply-to-name");
+    $mail->AddCC("cc-recipient-email@domain", "cc-recipient-name");
+    $mail->Subject = "Confirm Test is Test Email sent via Gmail SMTP Server using PHP Mailer";
+    $content = "<b>This is a Test Email sent via Gmail SMTP Server using PHP mailer class.</b> Code is :". $otp
+    . "<br> Token is :". $token;
+
+
+
+    // Exception Handler
+    $mail->MsgHTML($content);
+    if(!$mail->Send()) {
+      echo "Error while sending Email.";
+      var_dump($mail);
+    } else {
+      echo "Email sent successfully";
+    }
+
+
+
+
+
+  	$_SESSION['id'] = $fetch['id'];
+
+  	// header('location: activation');
+    alert("ok");
   }
 }
-
 ?>
