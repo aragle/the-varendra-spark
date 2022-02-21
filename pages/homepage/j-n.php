@@ -146,14 +146,14 @@
                           <a href="" class="text-white-50">
                               <div class="row mb-4 border-bottom pb-2">
                                   <div class="col-3">
-                                      <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                                      <img src="https://picsum.photos/450/300?random=1"
                                           class="img-fluid shadow-1-strong rounded" alt="" />
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
                                       <p>
-                                          aratheunseen
+                                          @aratheunseen
                                       </p>
                                   </div>
                               </div>
@@ -162,14 +162,14 @@
                           <a href="" class="text-white-50">
                               <div class="row mb-4 border-bottom pb-2">
                                   <div class="col-3">
-                                      <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                                      <img src="https://picsum.photos/450/300?random=1"
                                           class="img-fluid shadow-1-strong rounded" alt="" />
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
                                       <p>
-                                          aratheunseen
+                                          @aratheunseen
                                       </p>
                                   </div>
                               </div>
@@ -178,14 +178,14 @@
                           <a href="" class="text-white-50">
                               <div class="row mb-4 border-bottom pb-2">
                                   <div class="col-3">
-                                      <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                                      <img src="https://picsum.photos/450/300?random=1"
                                           class="img-fluid shadow-1-strong rounded" alt="" />
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
                                       <p>
-                                          aratheunseen
+                                          @aratheunseen
                                       </p>
                                   </div>
                               </div>
@@ -194,14 +194,14 @@
                           <a href="" class="text-white-50">
                               <div class="row mb-4 border-bottom pb-2">
                                   <div class="col-3">
-                                      <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                                      <img src="https://picsum.photos/450/300?random=1"
                                           class="img-fluid shadow-1-strong rounded" alt="" />
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
                                       <p>
-                                          aratheunseen
+                                          @aratheunseen
                                       </p>
                                   </div>
                               </div>
@@ -210,14 +210,14 @@
                           <a href="" class="text-white-50">
                               <div class="row mb-4 border-bottom pb-2">
                                   <div class="col-3">
-                                      <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                                      <img src="https://picsum.photos/450/300?random=1"
                                           class="img-fluid shadow-1-strong rounded" alt="" />
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
                                       <p>
-                                          aratheunseen
+                                          @aratheunseen
                                       </p>
                                   </div>
                               </div>
@@ -230,14 +230,14 @@
                           <a href="" class="text-white-50">
                               <div class="row mb-4 border-bottom pb-2">
                                   <div class="col-3">
-                                      <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                                      <img src="https://picsum.photos/450/300?random=1"
                                           class="img-fluid shadow-1-strong rounded" alt="" />
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
                                       <p>
-                                          aratheunseen
+                                          @aratheunseen
                                       </p>
                                   </div>
                               </div>
@@ -246,14 +246,14 @@
                           <a href="" class="text-white-50">
                               <div class="row mb-4 border-bottom pb-2">
                                   <div class="col-3">
-                                      <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                                      <img src="https://picsum.photos/450/300?random=1"
                                           class="img-fluid shadow-1-strong rounded" alt="" />
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
                                       <p>
-                                          aratheunseen
+                                          @aratheunseen
                                       </p>
                                   </div>
                               </div>
@@ -262,14 +262,14 @@
                           <a href="" class="text-white-50">
                               <div class="row mb-4 border-bottom pb-2">
                                   <div class="col-3">
-                                      <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                                      <img src="https://picsum.photos/450/300?random=1"
                                           class="img-fluid shadow-1-strong rounded" alt="" />
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
                                       <p>
-                                          aratheunseen
+                                          @aratheunseen
                                       </p>
                                   </div>
                               </div>
@@ -278,14 +278,14 @@
                           <a href="" class="text-white-50">
                               <div class="row mb-4 border-bottom pb-2">
                                   <div class="col-3">
-                                      <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                                      <img src="https://picsum.photos/450/300?random=1"
                                           class="img-fluid shadow-1-strong rounded" alt="" />
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
                                       <p>
-                                          aratheunseen
+                                          @aratheunseen
                                       </p>
                                   </div>
                               </div>
@@ -294,14 +294,14 @@
                           <a href="" class="text-white-50">
                               <div class="row mb-4 border-bottom pb-2">
                                   <div class="col-3">
-                                      <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                                      <img src="https://picsum.photos/450/300?random=1"
                                           class="img-fluid shadow-1-strong rounded" alt="" />
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
                                       <p>
-                                          aratheunseen
+                                          @aratheunseen
                                       </p>
                                   </div>
                               </div>
