@@ -151,7 +151,7 @@
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
+                                      <p class="mb-2">A Review of Blockchain tech and Its Applications in the Business Environment</p>
                                       <p>
                                           @aratheunseen
                                       </p>
@@ -167,7 +167,7 @@
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
+                                      <p class="mb-2">A Review of Blockchain tech and Its Applications in the Business Environment</p>
                                       <p>
                                           @aratheunseen
                                       </p>
@@ -183,7 +183,7 @@
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
+                                      <p class="mb-2">A Review of Blockchain tech and Its Applications in the Business Environment</p>
                                       <p>
                                           @aratheunseen
                                       </p>
@@ -199,7 +199,7 @@
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
+                                      <p class="mb-2">A Review of Blockchain tech and Its Applications in the Business Environment</p>
                                       <p>
                                           @aratheunseen
                                       </p>
@@ -215,7 +215,7 @@
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
+                                      <p class="mb-2">A Review of Blockchain tech and Its Applications in the Business Environment</p>
                                       <p>
                                           @aratheunseen
                                       </p>
@@ -235,7 +235,7 @@
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
+                                      <p class="mb-2">A Review of Blockchain tech and Its Applications in the Business Environment</p>
                                       <p>
                                           @aratheunseen
                                       </p>
@@ -251,7 +251,7 @@
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
+                                      <p class="mb-2">A Review of Blockchain tech and Its Applications in the Business Environment</p>
                                       <p>
                                           @aratheunseen
                                       </p>
@@ -267,7 +267,7 @@
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
+                                      <p class="mb-2">A Review of Blockchain tech and Its Applications in the Business Environment</p>
                                       <p>
                                           @aratheunseen
                                       </p>
@@ -283,7 +283,7 @@
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
+                                      <p class="mb-2">A Review of Blockchain tech and Its Applications in the Business Environment</p>
                                       <p>
                                           @aratheunseen
                                       </p>
@@ -299,7 +299,7 @@
                                   </div>
 
                                   <div class="col-9 post-title-left">
-                                      <p class="mb-2"><strong>A Review of Blockchain tech and Its Applications in the Business Environment</strong></p>
+                                      <p class="mb-2">A Review of Blockchain tech and Its Applications in the Business Environment</p>
                                       <p>
                                           @aratheunseen
                                       </p>
