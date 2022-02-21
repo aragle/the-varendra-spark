@@ -25,10 +25,13 @@
 
       $codePlus =  substr($student_id, -4);
       $verifiedToken = md5((int)$code+(int)$codePlus);
+
+      $newToken = md5(rand(0000000,9999999));
+
       // If result matched and table row must be 1 row
       if($count == 1){
         if($student_id == $fetch['student_id'] && $verifiedToken == $fetch['token']){
-          $updateStatus = "UPDATE users SET status='1' WHERE student_id='$student_id'";
+          $updateStatus = "UPDATE users SET status='1',token='$newToken' WHERE student_id='$student_id'";
           mysqli_query($connection,$updateStatus);
           echo "<script>alertBox('success','Activation Successful!','Your account is now active.')</script>";
         }

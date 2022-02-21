@@ -121,10 +121,10 @@ if (isset($_POST['registration'])) {
                   VALUES('$first_name', '$last_name', '$student_id', '$email', '$pass', '$status', '$token','$permission')";
         mysqli_query($connection, $query);
 
-        $sql = "Select id from users where student_id = '$student_id'";
-        $result = mysqli_query($connection, $sql);
-        $fetch = mysqli_fetch_array($result,MYSQLI_ASSOC);
-        $_SESSION['id'] = $fetch['id'];
+        // $sql = "Select id from users where student_id = '$student_id'";
+        // $result = mysqli_query($connection, $sql);
+        // $fetch = mysqli_fetch_array($result,MYSQLI_ASSOC);
+        // $_SESSION['id'] = $fetch['id'];
     }
 
   	// header('location: registration');

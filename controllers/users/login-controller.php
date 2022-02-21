@@ -16,7 +16,7 @@
       $password = mysqli_real_escape_string($connection,$_POST['password']);
       $pass = md5($password);
 
-      $sql = "SELECT id FROM users WHERE student_id = '$student_id' and password = '$pass'";
+      $sql = "SELECT id,status FROM users WHERE student_id = '$student_id' and password = '$pass'";
       $result = mysqli_query($connection,$sql);
       $fetch = mysqli_fetch_array($result,MYSQLI_ASSOC);
       // $status = $row['status'];
@@ -25,9 +25,12 @@
 
       // If result matched $myusername and $mypassword, table row must be 1 row
       if($count == 1){
-        $_SESSION['id'] = $fetch['id'];
-        header("location: /");
-        echo "<script>alertBox('success','Login Successful!','')</script>";
+        if($fetch['status'] == 1){
+          $_SESSION['id'] = $fetch['id'];
+          header("location: /");
+        }else{
+          echo "<script>alertBox('danger','Inactive Account!','Verify your email first.')</script>";
+        }
       }else {
          $error = "Invalid Student ID or Password.";
          echo "<script>alertBox('danger','Login Failed!','Invalid Student ID or Password.')</script>";
