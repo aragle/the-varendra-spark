@@ -17,9 +17,10 @@
     <title>The Varendra Spark</title>
 
     <!-- Link Styles -->
-    <link rel="stylesheet" href="components/styles/bootstrap.css">
-    <link rel="stylesheet" href="components/styles/fonts.css">
-    <link rel="stylesheet" href="components/styles/custom.css">
+    <link rel="stylesheet" href="components/styles/css/bootstrap.css">
+    <link rel="stylesheet" href="components/styles/css/fontawesome.all.css">
+    <link rel="stylesheet" href="components/styles/css/fonts.css">
+    <link rel="stylesheet" href="components/styles/css/custom.css">
 
     <!-- Link Scripts -->
     <link rel="stylesheet" href="components/scripts/bootstrap.js">
