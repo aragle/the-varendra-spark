@@ -39,7 +39,7 @@
 								<div class="row">
 										<!--Grid column 1-->
 										<div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-content-padding">
-												<p style="border: 1px solid #333; margin-top: 60px; font-size: 35px; font-family: unique;">The Varendra Spark</p>
+												<p class="logo-font" style="border: 1px solid #333; margin-top: 60px; font-size: 35px;">The Varendra Spark</p>
 												<p>A Varendra University Online Portal</p>
 										</div>
 
