@@ -11,7 +11,7 @@
                 <div class="card bg-dark text-white">
                     <div class="card-body p-5">
                         <div class="mb-md-5 mt-md-4 pb-5 ">
-                            <h2 class="fw-bold mb-2 site-name">The Varendra Spark</h2>
+                            <h2 class="fw-bold mb-2 logo-font site-name">The Varendra Spark</h2>
                             <p class="text-white-50 mb-5">Active your account here!</p>
                             <form action="activation" method="post">
                               <?php

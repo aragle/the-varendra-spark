@@ -1,4 +1,8 @@
-/* Main */
+/* Logo Font Family */
+.logo-font {
+  font-family: 'LogoFont';
+}
+
 body {
   background: #23262b;
   color: hsla(0,0%,100%,.7);
