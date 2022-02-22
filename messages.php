@@ -1,5 +1,5 @@
 <?php
-    include 'global/header.php';
+    include 'pages/common/header.php';
 ?>
 
 <!-- Sub Menu -->
@@ -9,5 +9,5 @@
 
 <?php
     include 'pages/messages/messages-index.php';
-    include 'global/footer.php';
+    include 'pages/common/footer.php';
 ?>

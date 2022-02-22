@@ -1,5 +1,6 @@
 <?php
-    include 'global/header.php';
+    include 'pages/common/header.php';
+    include 'controllers/users/recovery-handler.php';
     include 'pages/account/recovery-page.php';
-    include 'global/footer.php';
+    include 'pages/common/header.php';
 ?>

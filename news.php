@@ -1,5 +1,5 @@
 <?php
-    include 'global/header.php';
+    include 'pages/common/header.php';
 ?>
 
 <!-- News Menu -->
@@ -15,5 +15,5 @@
 </div>
 
 <?php
-    include 'global/footer.php';
+    include 'pages/common/footer.php';
 ?>

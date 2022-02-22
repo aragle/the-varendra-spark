@@ -1,5 +1,5 @@
 <?php
-    include 'global/header.php';
+    include 'pages/common/header.php';
     include 'pages/account/payment-page.php';
-    include 'global/footer.php';
+    include 'pages/common/footer.php';
 ?>
