@@ -23,36 +23,36 @@
     border-bottom: 1px solid rgba(33, 40, 50, 0.125);
 }
 
-.search_panel{
-  display: grid;
-  justify-content: center;
+.search_panel {
+    display: grid;
+    justify-content: center;
 }
 
 input {
-  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
-  border: 1px solid #bbb;
-  width: 49%;
-  padding: 10px;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    border: 1px solid #bbb;
+    width: 49%;
+    padding: 10px;
 }
 
-select{
-  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
-  border: 1px solid #bbb;
-  width: 49%;
-  color: black;
-  padding: 10px;
+select {
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    border: 1px solid #bbb;
+    width: 49%;
+    color: black;
+    padding: 10px;
 }
 
 .ibutton {
-  border: 1px solid #bbb;
-  padding: 10px;
-  background: #bbb;
+    border: 1px solid #bbb;
+    padding: 10px;
+    background: #bbb;
     margin: 5px 0;
     width: 100%;
 }
 
 .ibutton:hover {
-  background: #ccc;
+    background: #ccc;
 }
 
 .frame {
@@ -70,9 +70,9 @@ select{
 
 @media screen and (max-width: 1080px) {
     .frame {
-    width: 100%;
-    margin: 0 auto;
-    height: 450px;
+        width: 100%;
+        margin: 0 auto;
+        height: 450px;
     }
 }
 }
@@ -202,20 +202,21 @@ select{
                     <div class="small text-muted mb-3 search_panel">Result Archive</div>
                     <div class="search_panel">
                         <form method="post" action="results">
-                            <input type="text" name="stu_id" id="stu_id" placeholder="Student ID" pattern="[0-9]{9}" minlength="9" maxlength="9" required autocomplete="on">
+                            <input type="text" name="stu_id" id="stu_id" placeholder="Student ID" pattern="[0-9]{9}"
+                                minlength="9" maxlength="9" required autocomplete="on">
                             <select name="semester">
-                              <option value="1st">1st Semester</option>
-                              <option value="2nd">2nd Semester</option>
-                              <option value="3rd">3rd Semester</option>
-                              <option value="4th">4th Semester</option>
-                              <option value="5th">5th Semester</option>
-                              <option value="6th">6th Semester</option>
-                              <option value="7th">7th Semester</option>
-                              <option value="8th">8th Semester</option>
-                              <option value="9th">9th Semester</option>
-                              <option value="10th">10th Semester</option>
-                              <option value="11th">11th Semester</option>
-                              <option value="12th">12th Semester</option>
+                                <option value="1st">1st Semester</option>
+                                <option value="2nd">2nd Semester</option>
+                                <option value="3rd">3rd Semester</option>
+                                <option value="4th">4th Semester</option>
+                                <option value="5th">5th Semester</option>
+                                <option value="6th">6th Semester</option>
+                                <option value="7th">7th Semester</option>
+                                <option value="8th">8th Semester</option>
+                                <option value="9th">9th Semester</option>
+                                <option value="10th">10th Semester</option>
+                                <option value="11th">11th Semester</option>
+                                <option value="12th">12th Semester</option>
                             </select>
                             <button type="submit" class="ibutton" class="btn btn-primary">View Transcript</button>
                         </form>
@@ -224,16 +225,17 @@ select{
             </div>
         </div>
     </div>
-
-
-    <div class="card card-header-actions mb-4"  style="background-color:#ddd;">
+    <?php
+      $imageurl = "http://202.5.52.152:8082/upload/" . $id. ".jpg";
+    ?>
+    <div class="card card-header-actions mb-4" style="background-color:#ddd;">
         <div class="card-header">
             <div class="container-xl px-4 mt-4">
                 <div class="row">
-                    <!-- <div class="right col-lg-3">
-                        <img class="mb-1" src="https://static.thenounproject.com/png/3938453-200.png"
-                            height="150px" width="150px" alt="Target" style="margin: 0 auto;display: flex;">
-                        <table class="itable">
+                    <div class="right col-lg-3">
+                        <img class="mb-5" src="<?php echo $imageurl; ?>" alt=""
+                            height="150px" width="150px" alt="Target" style="margin: 0 auto;display: flex;border-radius:20px;">
+                        <table class="mb-4 itable">
                             <tr style="border-bottom:1px solid #ccc">
                                 <td style="padding:5px 20px;">Student ID </td>
                                 <td style="padding:5px 20px;"><?php echo $id;?></td>
@@ -259,7 +261,7 @@ select{
                                 <td style="padding:5px 20px;"><?php echo $department;?></td>
                             </tr>
                         </table>
-                        <table class="itable" style="text-align:center;padding:10px;">
+                        <!-- <table class="itable" style="text-align:center;padding:10px;">
                           <tr style="border-bottom: 1px dotted #000;">
                             <th style="padding:10px 5px" colspan="3">Semester</th>
                           </tr>
@@ -283,11 +285,9 @@ select{
                             <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "11th" ?>">11th</a></td>
                             <td style="padding:10px 5px;border-right: 1px dotted #999;"><a href="<?php echo $next_url . "12th" ?>">12th</a></td>
                           </tr>
-                        </table>
-                        </div> -->
-                        <div class="right col-lg-12 text-black text-center p-3"><?php echo $id;?> - <?php echo $semester;?> Semester</div>
-                        <hr style="background:#000">
-                      <iframe  id="frame" class="frame" src="<?php echo $url ?>"/>
+                        </table> -->
+                        </div>
+                    <iframe id="frame" class="mt-5 frame" src="<?php echo $url ?>">
                 </div>
             </div>
         </div>
