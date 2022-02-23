@@ -56,7 +56,7 @@ select {
 }
 
 .frame {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     height: 420px;
 }
