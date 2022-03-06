@@ -19,7 +19,7 @@
           <div class="card-body text-center">
             <img src="<?php echo 'http://202.5.52.152:8082/upload/'.$fetch["student_id"].'.jpg' ?>" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;height: 150px;">
             <h5 class="my-1"><?php echo $fetch["first_name"] . ' ' . $fetch["last_name"] ?></h5>
-            <p class="text-muted mb-3">@aratheunseen</p>
+            <p class="text-muted mb-3">@username</p>
             <p class="text-white-50 mb-3">9th Semester</p>
             <p class="mb-4 text-success">#admin #podcaster #dreamer</p>
             <div class="d-flex justify-content-center mb-2">
@@ -32,7 +32,7 @@
             <ul class="list-group list-group-flush rounded-3">
               <li class="border-bottom border-dark d-flex justify-content-between align-items-center p-3">
                 <i class="fas fa-envelope fa-lg" style="color: #ccc;"></i>
-                <p class="mb-0">admin@thevarendraspark.com</p>
+                <p class="mb-0"><?php echo $fetch["email"] ?></p>
               </li>
               <li class="border-bottom border-dark d-flex justify-content-between align-items-center p-3">
                 <i class="fas fa-phone fa-lg" style="color: #ccc;"></i>
@@ -40,15 +40,15 @@
               </li>
               <li class="border-bottom border-dark d-flex justify-content-between align-items-center p-3">
                 <i class="fab fa-facebook fa-lg" style="color: #ccc;"></i>
-                <p class="mb-0">@aratheunseen</p>
+                <p class="mb-0">@fb-handle</p>
               </li>
               <li class="border-bottom border-dark d-flex justify-content-between align-items-center p-3">
                 <i class="fab fa-instagram fa-lg" style="color: #ccc;"></i>
-                <p class="mb-0">@aratheunseen</p>
+                <p class="mb-0">@insta-handle</p>
               </li>
               <li class="d-flex justify-content-between align-items-center p-3">
                 <i class="fab fa-github fa-lg" style="color: #ccc;"></i>
-                <p class="mb-0">@aratheunseen</p>
+                <p class="mb-0">@github-handle</p>
               </li>
             </ul>
           </div>
@@ -62,7 +62,7 @@
                 <p class="mb-0">Student ID</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">19XXXXXXX</p>
+                <p class="text-muted mb-0"><?php echo $fetch["student_id"] ?></p>
               </div>
             </div>
             <hr>
