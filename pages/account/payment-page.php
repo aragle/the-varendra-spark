@@ -176,86 +176,86 @@ tbody, td, tfoot, th, thead, tr{
                 <table class="table mb-0  bg-dark text-white-50">
                     <thead>
                         <tr>
-                            <th class="" scope="col">Session</th>
+                            <th class="" scope="col">Semester</th>
                             <th class="" scope="col">Amount</th>
-                            <th class="" scope="col">Status</th>
+                            <th class="" scope="col">Print</th>
                             <th class="" scope="col">Paid on</th>
                             <!-- <th class="border-gray-200" scope="col">Receipt</th> -->
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Spring-22</td>
+                            <td>11th</td>
                             <td>৳23,273</td>
                             <td><span class="badge bg-light text-dark">Invoice</span></td>
                             <td>-</td>
                             <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
                         </tr>
                         <tr>
-                            <td>Spring-20</td>
+                            <td>10th</td>
                             <td>৳12,350</td>
                             <td><span class="badge bg-success">Receipt</span></td>
                             <td>03/01/2020</td>
                             <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
                         </tr>
                         <tr>
-                            <td>Fall-19</td>
+                            <td>9th</td>
                             <td>৳26,283</td>
                             <td><span class="badge bg-success">Receipt</span></td>
                             <td>12/12/2019</td>
                             <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
                         </tr>
                         <tr>
-                            <td>Summer-19</td>
+                            <td>8th</td>
                             <td>৳33,260</td>
                             <td><span class="badge bg-success">Receipt</span></td>
                             <td>02/03/2019</td>
                             <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
                         </tr>
                         <tr>
-                            <td>Spring-20</td>
+                            <td>7th</td>
                             <td>৳12,350</td>
                             <td><span class="badge bg-success">Receipt</span></td>
                             <td>03/01/2020</td>
                             <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
                         </tr>
                         <tr>
-                            <td>Fall-19</td>
+                            <td>6th</td>
                             <td>৳26,283</td>
                             <td><span class="badge bg-success">Receipt</span></td>
                             <td>12/12/2019</td>
                             <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
                         </tr>
                         <tr>
-                            <td>Summer-19</td>
+                            <td>5th</td>
                             <td>৳33,260</td>
                             <td><span class="badge bg-success">Receipt</span></td>
                             <td>02/03/2019</td>
                             <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
                         </tr>
                         <tr>
-                            <td>Spring-20</td>
+                            <td>4th</td>
                             <td>৳12,350</td>
                             <td><span class="badge bg-success">Receipt</span></td>
                             <td>03/01/2020</td>
                             <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
                         </tr>
                         <tr>
-                            <td>Fall-19</td>
+                            <td>3rd</td>
                             <td>৳26,283</td>
                             <td><span class="badge bg-success">Receipt</span></td>
                             <td>12/12/2019</td>
                             <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
                         </tr>
                         <tr>
-                            <td>Summer-19</td>
+                            <td>2nd</td>
                             <td>৳33,260</td>
                             <td><span class="badge bg-success">Receipt</span></td>
                             <td>02/03/2019</td>
                             <!-- <td><a class="badge bg-light text-dark me-3" href="#!">Download</a></td> -->
                         </tr>
                         <tr>
-                            <td>Summer-19</td>
+                            <td>1st</td>
                             <td>৳33,260</td>
                             <td><span class="badge bg-success">Receipt</span></td>
                             <td>02/03/2019</td>
