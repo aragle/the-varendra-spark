@@ -91,11 +91,11 @@
 												<ul class="list-unstyled mb-0">
 														<li style="margin-bottom: 25px;">
 																<a href="#" class="text-white"><img style="width: 150px"
-																				src="global/assets/images/google-play-badge.png" alt="Get our apps on Play Store"></a>
+																				src="components/images/google-play-badge.png" alt="Get our apps on Play Store"></a>
 														</li>
 														<li>
 																<a href="#" class="text-white"><img style="width: 150px"
-																				src="global/assets/images/app-store-badge.png" alt="Get our apps on App Store"></a>
+																				src="components/images/app-store-badge.png" alt="Get our apps on App Store"></a>
 														</li>
 												</ul>
 										</div>
