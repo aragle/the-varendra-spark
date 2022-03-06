@@ -132,6 +132,17 @@
 													 echo "<a class='sign-link' href='login'>Login</a>";
 												 }
 											?>
+                        <?php
+												 if(isset($_SESSION['id'])){
+
+														$sql = mysqli_query($connection, "SELECT * FROM users WHERE id='$_SESSION[id]'") or die(mysqli_error());
+														$fetch = mysqli_fetch_array($sql);
+
+													 echo "<a class='sign-link' href='profile'>" . $fetch['first_name'] . " " . $fetch['last_name'] . "</a>";
+												 }else{
+													 echo "<a class='sign-link' href='login'>Register</a>";
+												 }
+											?>
                     </div>
                 </div>
             </div>
