@@ -1,9 +1,9 @@
 <?php
 
     // Check If Already Login the Go to Root
-    // if(isset($_SESSION['id'])){
-    //   header("location: /");
-    // }
+    if(isset($_SESSION['id'])){
+      echo '<script>window.location.replace("/profile")</script>';
+   }
 
      // initializing variables
      $error="";
@@ -27,7 +27,7 @@
       if($count == 1){
         if($fetch['status'] == 1){
           $_SESSION['id'] = $fetch['id'];
-          // header("location: /");
+           echo '<script>window.location.replace("/profile")</script>';
         }else{
           echo "<script>alertBox('danger','Inactive Account!','Verify your email first.')</script>";
         }
