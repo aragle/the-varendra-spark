@@ -61,7 +61,6 @@ body {
 .login-button {
   margin: 7px 5px 7px auto;
   display: block;
-  width: max-content;
 }
 
 .sign-link {
@@ -98,13 +97,20 @@ body {
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
     border: 1px solid #fff;
-    width: 100%;
+    width: 48%;
   }
 
   .sign-link:hover {
     color: #fff;
     opacity: 0.6;
   }
+}
+
+@media only screen and (max-width: 991px) {
+  .sign-link {
+    width: 49%;
+  }
+
 }
 
 /* Modal */
@@ -231,11 +237,11 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: transparent
+  background: transparent;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent
+  background-color: transparent;
 }
 
 #pnav-wrapper {

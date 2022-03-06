@@ -41,7 +41,7 @@
                         <div>
                             <p class="mb-0 text-white-50 text-center">Don't have an account? <a href="registration"
                                     class="text-white-50 fw-bold">[Register Here]</a></p>
-                            <p class="mb-0 text-white-50 text-center">Have an inactive account? <a href="activation"
+                            <p class="mb-0 text-white-50 text-center">Have an inactive account? <a href="verification"
                                             class="text-white-50 fw-bold">[Activate Here]</a></p>
                         </div>
 

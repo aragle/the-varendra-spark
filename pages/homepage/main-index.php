@@ -1,4 +1,4 @@
 <?php
     include 'pages/homepage/podcast-featured.php';
-    include 'pages/homepage/j-n.php';
+    include 'pages/homepage/journal-post.php';
 ?>
