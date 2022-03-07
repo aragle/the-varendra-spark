@@ -1,6 +1,6 @@
 <!-- Sub Menu -->
 <div class="sub-header fs-6 fw-lighter">
-    <a class="sub-nav">Verification</a>
+    <a class="sub-nav">Verify Email</a>
 </div>
 
 <!-- Activation -->
@@ -11,7 +11,7 @@
                 <div class="card bg-dark text-white">
                     <div class="card-body p-5">
                         <div class="mb-md-3 mt-md-3 pb-5 ">
-                            <form action="verification" method="post">
+                            <form action="verify" method="post">
                               <?php
                                   echo "<span class='text-danger' style='text-align:center;display:block;'> " . $error . "</span><br>";
                                ?>
@@ -27,7 +27,7 @@
                                 </div>
 
                                 <button name="activation" class="btn btn-outline-light btn-lg px-5 submit-button"
-                                    type="submit">Activate</button>
+                                    type="submit">Verify</button>
                             </form>
                         </div>
 

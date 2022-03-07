@@ -101,7 +101,8 @@ if (isset($_POST['registration'])) {
     $content = "
     Hello, ".$_POST['firstname']." ".$_POST['lastname']."!<br>
     Thank you for registration. Please verify your email to continue your journey with us.<br><br>
-    Your Verification Code is <b>".$code."</b><br>
+    Your Verification Code is <b>".$code."</b><br><br>
+    <a href='http://specdude.com/verify.php?token=".$token."'>Click here to verify your email</a><br><br>
     Account Info:<br>
     Student ID: ".$_POST['stu_id']."<br>
     Password: ".$_POST['password'];
