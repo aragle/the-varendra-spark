@@ -1,9 +1,9 @@
 <?php
 
 // Check If Already Login the Go to Root
-// if(isset($_SESSION['id'])){
-//   header("location: /");
-// }
+if (isset($_SESSION['id'])) {
+  echo '<script>window.location.replace("/")</script>';
+}
 
 require 'plugins/phpmailer/src/PHPMailer.php';
 require 'plugins/phpmailer/src/SMTP.php';
@@ -102,7 +102,6 @@ if (isset($_POST['registration'])) {
     Hello, ".$_POST['firstname']." ".$_POST['lastname']."!<br>
     Thank you for registration. Please verify your email to continue your journey with us.<br><br>
     Your Verification Code is <b>".$code."</b><br>
-    Your token is <b>".$token."</b><br><br>
     Account Info:<br>
     Student ID: ".$_POST['stu_id']."<br>
     Password: ".$_POST['password'];

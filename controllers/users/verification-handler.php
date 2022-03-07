@@ -1,9 +1,9 @@
 <?php
 
-    // Check If Already Login the Go to Root
-    // if(isset($_SESSION['id'])){
-    //   header("location: /");
-    // }
+// Check If Already Login the Go to Root
+if (isset($_SESSION['id'])) {
+  echo '<script>window.location.replace("/")</script>';
+}
 
      // initializing variables
      $error="";
@@ -14,7 +14,6 @@
       if (isset($_POST['activation'])) {
       $student_id = mysqli_real_escape_string($connection,$_POST['student_id']);
       $code = mysqli_real_escape_string($connection,$_POST['code']);
-      $token = mysqli_real_escape_string($connection,$_POST['token']);
 
       $sql = "SELECT student_id,token,status FROM users WHERE student_id = '$student_id'";
 
@@ -26,21 +25,22 @@
       $codePlus =  substr($student_id, -4);
       $verifiedToken = md5((int)$code+(int)$codePlus);
 
-      $newToken = md5(rand(0000000,9999999));
+      $newToken = rand(0000000,9999999);
 
       // If result matched and table row must be 1 row
       if($count == 1){
         if($student_id == $fetch['student_id'] && $verifiedToken == $fetch['token']){
           $updateStatus = "UPDATE users SET status='1',token='$newToken' WHERE student_id='$student_id'";
           mysqli_query($connection,$updateStatus);
+          $error = "Your account is activated! <a href='signin'>[Sign In]</a>";
           echo "<script>alertBox('success','Activation Successful!','Your account is now active.')</script>";
         }
         else{
-          echo "<script>alertBox('danger','Activation Failed!','Invalid Verification Code or Token.')</script>";
+          $error = "Invalid Student ID or Verification Code.";
+          echo "<script>alertBox('danger','Activation Failed!','Invalid Verification Code.')</script>";
         }
-
-        // header("location: /");
       }else {
+        $error = "Invalid Student ID or Code.";
          echo "<script>alertBox('danger','Activation Failed!','Invalid Request.')</script>";
       }
    }
