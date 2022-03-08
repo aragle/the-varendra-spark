@@ -78,7 +78,7 @@
                             <a class='nav-link' href='journal'>Journal</a>
                         </li>
                         <li class='nav-item'>
-                            <a class='nav-link' href='study-materials'>Study Materials</a>
+                            <a class='nav-link' href='study-resources'>Study Resources</a>
                         </li>
                         <li class='nav-item'>
                             <a class='nav-link' href='forum'>Forum</a>

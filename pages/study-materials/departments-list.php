@@ -14,7 +14,7 @@
               </div>
               <div class="text-end">
                 <h3>278</h3>
-                <p class="mb-0">Materials</p>
+                <p class="mb-0">Resources</p>
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@
               </div>
               <div class="text-end">
                 <h3>156</h3>
-                <p class="mb-0">Materials</p>
+                <p class="mb-0">Resources</p>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@
               </div>
               <div class="text-end">
                 <h3>251</h3>
-                <p class="mb-0">Materials</p>
+                <p class="mb-0">Resources</p>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@
               </div>
               <div class="text-end">
                 <h3>423</h3>
-                <p class="mb-0">Materials</p>
+                <p class="mb-0">Resources</p>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@
               </div>
               <div class="text-end">
                 <h3>278</h3>
-                <p class="mb-0">Materials</p>
+                <p class="mb-0">Resources</p>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@
               </div>
               <div class="text-end">
                 <h3>156</h3>
-                <p class="mb-0">Materials</p>
+                <p class="mb-0">Resources</p>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@
               </div>
               <div class="text-end">
                 <h3>251</h3>
-                <p class="mb-0">Materials</p>
+                <p class="mb-0">Resources</p>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@
               </div>
               <div class="text-end">
                 <h3>423</h3>
-                <p class="mb-0">Materials</p>
+                <p class="mb-0">Resources</p>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@
               </div>
               <div class="text-end">
                 <h3>278</h3>
-                <p class="mb-0">Materials</p>
+                <p class="mb-0">Resources</p>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@
               </div>
               <div class="text-end">
                 <h3>156</h3>
-                <p class="mb-0">Materials</p>
+                <p class="mb-0">Resources</p>
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@
               </div>
               <div class="text-end">
                 <h3>251</h3>
-                <p class="mb-0">Materials</p>
+                <p class="mb-0">Resources</p>
               </div>
             </div>
           </div>
@@ -183,7 +183,7 @@
               </div>
               <div class="text-end">
                 <h3>423</h3>
-                <p class="mb-0">Materials</p>
+                <p class="mb-0">Resources</p>
               </div>
             </div>
           </div>
