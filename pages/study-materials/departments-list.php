@@ -179,7 +179,7 @@
           <div class="card-body">
             <div class="d-flex justify-content-between px-md-1">
               <div class="align-self-center">
-                <i class="fas text-muted fa-1x">ALL</i>
+                <i class="fas text-muted fa-1x">Others</i>
               </div>
               <div class="text-end">
                 <h3>423</h3>

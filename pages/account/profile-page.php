@@ -107,6 +107,16 @@
           <div class="col-md-12">
             <div class="card mb-4 mb-md-0">
               <div class="card-body">
+                <p class="mb-4">Files</p>
+                <div class="text-center p-5">No Uploaded Files</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <div class="card mb-4 mb-md-0">
+              <div class="card-body">
                 <p class="mb-4">Forum Posts</p>
                 <div class="text-center p-5">No Forum Posts</div>
                 </div>
