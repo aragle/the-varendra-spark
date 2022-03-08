@@ -75,16 +75,19 @@
                             <a class='nav-link' aria-current='page' href='board'>Board</a>
                         </li>
                         <li class='nav-item'>
-                            <a class='nav-link' href='news'>News</a>
+                            <a class='nav-link' href='journal'>Journal</a>
                         </li>
                         <li class='nav-item'>
-                            <a class='nav-link' href='journal'>Journal</a>
+                            <a class='nav-link' href='study-materials'>Study Materials</a>
                         </li>
                         <li class='nav-item'>
                             <a class='nav-link' href='forum'>Forum</a>
                         </li>
                         <li class='nav-item'>
                             <a class='nav-link' href='podcast'> Podcast</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='news'>News</a>
                         </li>
                         <?php
                         if (isset($_SESSION['id'])) {
@@ -115,9 +118,9 @@
         </div>
 
         <!-- Alert Panel -->
-        <div id='alertStyle' class='alert alert-dismissible fade show' style='display:none'>
+        <!-- <div id='alertStyle' class='alert alert-dismissible fade show' style='display:none'>
             <strong id='alertName'></strong> <span id='alertMessage'></span>
             <button type='button' class='btn-close' data-bs-dismiss='alert'></button>
-        </div>
+        </div> -->
         </div>
     </section>

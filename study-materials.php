@@ -1,5 +1,5 @@
 <?php
     include 'pages/common/header.php';
-    include 'pages/account/courses-page.php';
+    include 'pages/study-materials/study-materials-index.php';
     include 'pages/common/footer.php';
 ?>

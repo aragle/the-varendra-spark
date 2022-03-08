@@ -102,7 +102,9 @@ if (isset($_POST['registration'])) {
     Hello, ".$_POST['firstname']." ".$_POST['lastname']."!<br>
     Thank you for registration. Please verify your email to continue your journey with us.<br><br>
     Your Verification Code is <b>".$code."</b><br><br>
-    <a href='http://specdude.com/verify.php?token=".$token."'>Click here to verify your email</a><br><br>
+    <a href='http://specdude.com/verify.php?".$student_id."?token=".$token."'>Click here to verify your email</a><br><br>
+    Copy this link and browse from any browser:<br>
+    http://specdude.com/verify.php?id=".$student_id."?token=".$token."<br><br>
     Account Info:<br>
     Student ID: ".$_POST['stu_id']."<br>
     Password: ".$_POST['password'];
