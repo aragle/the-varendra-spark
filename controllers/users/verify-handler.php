@@ -11,10 +11,9 @@ if (isset($_SESSION['id'])) {
       if($_SERVER["REQUEST_METHOD"] == "GET") {
 
       // get student id, code and token
-      if (isset($_GET['activation'])) {
-      $student_id = mysqli_real_escape_string($connection,$_GET['student_id']);
-      $code = mysqli_real_escape_string($connection,$_POST['code']);
-      $tokenFromLink = mysqli_real_escape_string($connection,$_GET['token']);
+      if (isset($_GET['verify'])) {
+      $student_id = mysqli_real_escape_string($connection,$_GET['student-id']);
+      $code = mysqli_real_escape_string($connection,$_GET['verification-code']);
 
       $sql = "SELECT student_id,token,status FROM users WHERE student_id = '$student_id'";
 
@@ -33,21 +32,15 @@ if (isset($_SESSION['id'])) {
         if($student_id == $fetch['student_id'] && $verifiedToken == $fetch['token']){
           $updateStatus = "UPDATE users SET status='1',token='$newToken' WHERE student_id='$student_id'";
           mysqli_query($connection,$updateStatus);
-          $error = "Your account is activated! <a href='signin'>[Sign In]</a>";
-          echo "<script>alertBox('success','Activation Successful!','Your account is now active.')</script>";
-        }
-        elseif($student_id == $fetch['student_id'] && $tokenFromLink == $fetch['token']){
-          $updateStatus = "UPDATE users SET status='1',token='$newToken' WHERE student_id='$student_id'";
-          mysqli_query($connection,$updateStatus);
-          $error = "Your account is activated! <a href='signin'>[Sign In]</a>";
+          $error = "<span style='color:green'>Your email is verified! <a href='signin'>Sign In your account</a></span>";
           echo "<script>alertBox('success','Activation Successful!','Your account is now active.')</script>";
         }
         else{
-          $error = "Invalid Student ID or Verification Code.";
+          $error = "Invalid verification code.";
           echo "<script>alertBox('danger','Activation Failed!','Invalid Verification Code.')</script>";
         }
       }else {
-        $error = "Invalid Student ID or Code.";
+        $error = "Invalid student ID or code.";
          echo "<script>alertBox('danger','Activation Failed!','Invalid Request.')</script>";
       }
    }

@@ -72,9 +72,6 @@
                 <div class='collapse navbar-collapse' id='navbarNavDropdown'>
                     <ul class='navbar-nav'>
                         <li class='nav-item'>
-                            <a class='nav-link' aria-current='page' href='board'>Board</a>
-                        </li>
-                        <li class='nav-item'>
                             <a class='nav-link' href='journal'>Journal</a>
                         </li>
                         <li class='nav-item'>
@@ -84,7 +81,7 @@
                             <a class='nav-link' href='forum'>Forum</a>
                         </li>
                         <li class='nav-item'>
-                            <a class='nav-link' href='podcast'> Podcast</a>
+                            <a class='nav-link' href='podcast'>Podcast</a>
                         </li>
                         <li class='nav-item'>
                             <a class='nav-link' href='news'>News</a>

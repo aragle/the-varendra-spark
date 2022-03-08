@@ -2,9 +2,8 @@
 <link rel='stylesheet' href='components/styles/css/material-design-iconic-font.css'>
 
 <div class="wrapper">
-    <form action="sign-up">
+    <form method="get" action="sign-up">
         <div id="wizard">
-
             <h4></h4>
             <section>
                 <h1 style='text-align:center;margin-bottom: 50px;'>Fill up this form to Sign Up</h1>
@@ -37,105 +36,13 @@
                             <input type="repassword" placeholder="Enter password again" class="form-control">
                         </div>
                     </div>
-            </section>
-
-            <h4></h4>
-            <section>
-            <h1 style='text-align:center;margin-bottom: 50px;'>Fill up this form to Sign Up</h1>
-                <div class="grid">
-                    <div class="row">
-                        <a href="#" class="grid-item"
-                            style="background-image: url(https://colorlib.com/etc/bwiz/colorlib-wizard-6/images/programming-bg.jpg);">
-                            <div class="inner">
-                                <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-6/images/programming.png"
-                                    alt="">
-                                <span>Programming</span>
-                            </div>
-                        </a>
-                        <a href="#" class="grid-item"
-                            style="background-image: url('https://colorlib.com/etc/bwiz/colorlib-wizard-6/images/research-bg.jpg');">
-                            <div class="inner">
-                                <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-6/images/research.png" alt="">
-                                <span>Research</span>
-                            </div>
-                        </a>
-                        <a href="#" class="grid-item"
-                            style="background-image: url('https://colorlib.com/etc/bwiz/colorlib-wizard-6/images/teacher-bg.jpg');">
-                            <div class="inner">
-                                <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-6/images/teacher.png" alt="">
-                                <span>Teacher</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <a href="#" class="grid-item" style="background-image: url('images/tour-guide-bg.jpg');">
-                            <div class="inner">
-                                <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-6/images/tour-guide.png" alt="">
-                                <span>Tour Guide</span>
-                            </div>
-                        </a>
-                        <a href="#" class="grid-item"
-                            style="background-image: url('https://colorlib.com/etc/bwiz/colorlib-wizard-6/images/business-bg.jpg');">
-                            <div class="inner">
-                                <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-6/images/business.png" alt="">
-                                <span>Business</span>
-                            </div>
-                        </a>
-                        <a href="#" class="grid-item"
-                            style="background-image: url('https://colorlib.com/etc/bwiz/colorlib-wizard-6/images/artist-bg.jpg');">
-                            <div class="inner">
-                                <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-6/images/artist.png" alt="">
-                                <span>Artist</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <h4></h4>
-            <section>
-                <div class="form-row">
-                    <div class="form-holder">
-                        <input type="text" placeholder="Street Name" class="form-control">
-                    </div>
-                    <div class="form-holder">
-                        <input type="text" placeholder="Street Number" class="form-control">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-holder">
-                        <input type="text" placeholder="City" class="form-control">
-                    </div>
-                    <div class="form-holder">
-                        <input type="text" placeholder="Country" class="form-control">
-                    </div>
-                </div>
-            </section>
-
-            <h4></h4>
-            <section>
-                <div class="form-row">
-                    <div class="form-holder">
-                        <input type="text" placeholder="Street Name" class="form-control">
-                    </div>
-                    <div class="form-holder">
-                        <input type="text" placeholder="Street Number" class="form-control">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-holder">
-                        <input type="text" placeholder="City" class="form-control">
-                    </div>
-                    <div class="form-holder">
-                        <input type="text" placeholder="Country" class="form-control">
-                    </div>
                 </div>
             </section>
         </div>
     </form>
 </div>
-<script src="https://colorlib.com/etc/bwiz/colorlib-wizard-6/js/jquery-3.3.1.min.js"></script>
 
+<script src="https://colorlib.com/etc/bwiz/colorlib-wizard-6/js/jquery-3.3.1.min.js"></script>
 <script src="https://colorlib.com/etc/bwiz/colorlib-wizard-6/js/jquery.steps.js"></script>
 
 <script>

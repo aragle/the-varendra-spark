@@ -102,9 +102,9 @@ if (isset($_POST['registration'])) {
     Hello, ".$_POST['firstname']." ".$_POST['lastname']."!<br>
     Thank you for registration. Please verify your email to continue your journey with us.<br><br>
     Your Verification Code is <b>".$code."</b><br><br>
-    <a href='http://specdude.com/verify.php?".$student_id."?token=".$token."'>Click here to verify your email</a><br><br>
+    <a href='http://specdude.com/email-verification?".$student_id."&verification-code=".$code."&verify=email'>Click here to verify your email</a><br><br>
     Copy this link and browse from any browser:<br>
-    http://specdude.com/verify.php?id=".$student_id."?token=".$token."<br><br>
+    http://specdude.com/email-verification?student-id=".$student_id."&verification-code=".$code."&verify=email<br><br>
     Account Info:<br>
     Student ID: ".$_POST['stu_id']."<br>
     Password: ".$_POST['password'];
@@ -115,7 +115,8 @@ if (isset($_POST['registration'])) {
         echo "<script>alertBox('danger','Failed!','Error while sending Email.')</script>";
         //var_dump($mail);
     } else {
-        echo "<script>alertBox('primary','Accound Created!','Verify your email.')</script>";
+        echo "<script>alertBox('primary','Account Created!','Verify your email.')</script>";
+        array_push($errors, "<div style='text-align:center;color:green;'> Account created. <a href='/verify'>Verify your Email</a></div>");
 
         $status = 0; // Set account status as Deactive
         $permission = 9; // 9 for member or Generl users

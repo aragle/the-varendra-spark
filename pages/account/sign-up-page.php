@@ -16,7 +16,7 @@
                                 <?php
                                         foreach ($errors as $issues){
                                             echo "<script>alertBox('danger','Registration Failed!','Input Required Information.')</script>";
-                                            echo "<span style='color:red;'> * </span> " . $issues . "<br>";
+                                            echo "<div style='text-align:center;'><span style='color:#DC143C;'>" . $issues . "<br>" . "</span></div>";
                                         }
                                     ?>
                                 <br>
