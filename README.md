@@ -44,3 +44,6 @@ Backend –
   -	Student Panel
   -	News and Events (rss+xml)
   -	Notice (rss+xml)
+
+
+![tvs](https://user-images.githubusercontent.com/62181222/157828774-03fa3462-96f2-446f-866b-c493f582df65.png)
