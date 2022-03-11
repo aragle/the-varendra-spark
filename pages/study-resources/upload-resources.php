@@ -4,7 +4,7 @@
     <a href="study-resources.php" class="sub-nav">Study Resources</a>
 </div>
 
-<section id="login" class="sign">
+<section id="upload" class="sign">
     <div class="container py-3 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-8 col-lg-6">
@@ -21,7 +21,7 @@
                                     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
                                     // Check if image file is a actual image or fake image
-                                    if (isset($_POST["submit"])) {
+                                    if (isset($_POST["upload"])) {
                                         $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
                                         if ($check !== false) {
                                             echo "File is an image - " . $check["mime"] . ".";
@@ -95,7 +95,7 @@
                                     <label class="form-label" for="semester">Select Course</label>
                                 </div>
 
-                                <button name="login" class="btn btn-outline-light btn-lg px-5 submit-button" type="submit">Upload</button>
+                                <button name="upload" class="btn btn-outline-light btn-lg px-5 submit-button" type="submit">Upload</button>
                             </form>
                         </div>
                     </div>
