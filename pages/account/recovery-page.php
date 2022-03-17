@@ -26,12 +26,10 @@
                                     <label class="form-label" for="email">Email</label>
                                 </div>
 
-                                <button class="btn btn-outline-light btn-lg px-5 submit-button"
-                                    type="submit">Submit</button>
+                                <button class="btn btn-outline-light btn-lg px-5 submit-button" type="submit">Submit</button>
                             </form>
                         </div>
-                        <p class="text-center text-muted mt-5 mb-0">Remebrer password? <a href="login"
-                                        class="fw-bold text-white-50">[Login Here]</a></p>
+                        <p class="text-center text-muted mt-5 mb-0">Remebrer password? <a href="login" class="fw-bold text-white-50">[Login Here]</a></p>
                     </div>
                 </div>
             </div>

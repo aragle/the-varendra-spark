@@ -1,5 +1,5 @@
 <?php
-    include 'controllers/session.php';
+include 'controllers/session.php';
 ?>
 
 <!DOCTYPE html>
@@ -94,18 +94,18 @@
                     </ul>
                     <div class='sign-item login-button '>
                         <?php
-                            if (isset($_SESSION['id'])) {
-                                echo "<a class='sign-link' style='background: #fff; color: #000;' href='profile'>My Profile</a>";
-                            } else {
-                                echo "<a class='sign-link' href='signin'>Sign In</a>";
-                            }
+                        if (isset($_SESSION['id'])) {
+                            echo "<a class='sign-link' style='background: #fff; color: #000;' href='profile'>My Profile</a>";
+                        } else {
+                            echo "<a class='sign-link' href='signin'>Sign In</a>";
+                        }
                         ?>
                         <?php
-                            if (!isset($_SESSION['id'])) {
-                                echo "<a class='sign-link' href='signup' style='background: #fff; color: #000;'>Sign Up</a>";
-                            } else {
-                                echo "<a class='sign-link' href='signout'>Sign Out</a>";
-                            }
+                        if (!isset($_SESSION['id'])) {
+                            echo "<a class='sign-link' href='signup' style='background: #fff; color: #000;'>Sign Up</a>";
+                        } else {
+                            echo "<a class='sign-link' href='signout'>Sign Out</a>";
+                        }
                         ?>
                     </div>
                 </div>

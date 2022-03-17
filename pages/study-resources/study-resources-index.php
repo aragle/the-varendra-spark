@@ -5,5 +5,5 @@
 </div>
 
 <?php
-    include 'departments-list.php';
+include 'departments-list.php';
 ?>
