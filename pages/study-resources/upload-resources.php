@@ -15,7 +15,7 @@
                             <form action="upload-resources" method="post" enctype="multipart/form-data">
                                 <div style="text-align: center;" class="mb-5">
                                     <?php
-                                    $target_dir = "uploads/study-resources/";
+                                    $target_dir = "uploads/";
                                     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
                                     $uploadOk = 1;
                                     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -24,8 +24,10 @@
                                     if (isset($_POST["upload"])) {
                                         $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
                                         if ($check !== false) {
+                                            echo "File is an image - " . $check["mime"] . ".";
                                             $uploadOk = 1;
                                         } else {
+                                            echo "File is not an image.";
                                             $uploadOk = 0;
                                         }
                                     }
@@ -44,10 +46,10 @@
 
                                     // Allow certain file formats
                                     if (
-                                        $imageFileType != "pdf" && $imageFileType != "png" && $imageFileType != "jpeg"
+                                        $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
                                         && $imageFileType != "gif"
                                     ) {
-                                        echo "Sorry, only PDF, DOCX, JPG, JPEG, PNG & GIF files are allowed.";
+                                        echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
                                         $uploadOk = 0;
                                     }
 

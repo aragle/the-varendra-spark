@@ -12,6 +12,7 @@
                     <div class="card-body p-5">
                         <div class="mb-md-3 mt-md-3 pb-5 ">
                             <form action="verify" method="get">
+<<<<<<< HEAD
                               <?php
                                   echo "<span class='text-danger' style='text-align:center;display:block;'> " . $error . "</span><br>";
                                ?>
@@ -20,20 +21,38 @@
                                    <input type="text" name="student-id" id="student-id" class="form-control form-control-lg" />
                                    <label class="form-label" for="student-id">Student ID</label>
                                </div>
+=======
+                                <?php
+                                echo "<span class='text-danger' style='text-align:center;display:block;'> " . $error . "</span><br>";
+                                ?>
+                                <br>
+                                <div class="form-outline form-white mb-2">
+                                    <input type="text" name="student-id" id="student-id" class="form-control form-control-lg" />
+                                    <label class="form-label" for="student-id">Student ID</label>
+                                </div>
+>>>>>>> parent of 22c27de (update)
 
                                 <div class="form-outline form-white mb-4">
                                     <input type="text" name="verification-code" id="verification-code" class="form-control form-control-lg" />
                                     <label class="form-label" for="verification-code">Verification Code</label>
                                 </div>
 
+<<<<<<< HEAD
                                 <button name="verify" value="manual" class="btn btn-outline-light btn-lg px-5 submit-button"
                                     type="submit">Verify</button>
+=======
+                                <button name="verify" value="manual" class="btn btn-outline-light btn-lg px-5 submit-button" type="submit">Verify</button>
+>>>>>>> parent of 22c27de (update)
                             </form>
                         </div>
 
                         <div>
+<<<<<<< HEAD
                             <p class="mb-0 text-white-50 text-center">Have an active account? <a href="signin"
                                     class="text-white-50 fw-bold">[Sign In]</a></p>
+=======
+                            <p class="mb-0 text-white-50 text-center">Have an active account? <a href="signin" class="text-white-50 fw-bold">[Sign In]</a></p>
+>>>>>>> parent of 22c27de (update)
                         </div>
 
                     </div>
@@ -41,4 +60,8 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 </section>
+=======
+</section>
+>>>>>>> parent of 22c27de (update)

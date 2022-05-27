@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
     include 'controllers/session.php';
+=======
+include 'controllers/session.php';
+>>>>>>> parent of 22c27de (update)
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +22,34 @@
     <meta name='description' content='A Varendra University Community'>
     <meta name='keywords' content='varendra,community,forum,podcasts,vu,journal,varendra university,students,academic,resources'>
 
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop='name' content='Neumorphism UI by Themesberg'>
+    <meta itemprop='description' content='Start developing neumorphic web applications and pages using Neumorphism UI. It features over 100 individual components and 5 example pages.'>
+    <meta itemprop='image' content='https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/neumorphism-thumbnail.jpg'>
+
+    <!-- Twitter Card data -->
+    <meta name='twitter:card' content='product'>
+    <meta name='twitter:site' content='@themesberg'>
+    <meta name='twitter:title' content='Neumorphism UI by Themesberg'>
+    <meta name='twitter:description' content='Start developing neumorphic web applications and pages using Neumorphism UI. It features over 100 individual components and 5 example pages.'>
+    <meta name='twitter:creator' content='@themesberg'>
+    <meta name='twitter:image' content='https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/neumorphism-thumbnail.jpg'>
+
+    <!-- Open Graph data -->
+    <meta property='fb:app_id' content='214738555737136'>
+    <meta property='og:title' content='Neumorphism UI by Themesberg' />
+    <meta property='og:type' content='article' />
+    <meta property='og:url' content='https://demo.themesberg.com/neumorphism-ui/' />
+    <meta property='og:image' content='https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/neumorphism-thumbnail.jpg' />
+    <meta property='og:description' content='Start developing neumorphic web applications and pages using Neumorphism UI. It features over 100 individual components and 5 example pages.' />
+    <meta property='og:site_name' content='Themesberg' />
+
     <!-- Favicon -->
+    <link rel='apple-touch-icon' sizes='120x120' href='../../assets/img/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='../../assets/img/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='../../assets/img/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='../../assets/img/favicon/site.webmanifest'>
+    <link rel='mask-icon' href='../../assets/img/favicon/safari-pinned-tab.svg' color='#ffffff'>
     <meta name='msapplication-TileColor' content='#ffffff'>
     <meta name='theme-color' content='#ffffff'>
 
@@ -38,7 +69,7 @@
     <section id='header'>
         <nav class='navbar navbar-expand-lg navbar-dark'>
             <div class='container-fluid'>
-                <a class='navbar-brand logo-font' href='/spark/'>The Varendra Spark</a>
+                <a class='navbar-brand logo-font' href='/'>The Varendra Spark</a>
                 <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
                     <span class='navbar-toggler-icon'></span>
                 </button>
@@ -67,6 +98,7 @@
                     </ul>
                     <div class='sign-item login-button '>
                         <?php
+<<<<<<< HEAD
                             if (isset($_SESSION['id'])) {
                                 echo "<a class='sign-link' style='background: #fff; color: #000;' href='profile'>My Profile</a>";
                             } else {
@@ -79,6 +111,20 @@
                             } else {
                                 echo "<a class='sign-link' href='signout'>Sign Out</a>";
                             }
+=======
+                        if (isset($_SESSION['id'])) {
+                            echo "<a class='sign-link' style='background: #fff; color: #000;' href='profile'>My Profile</a>";
+                        } else {
+                            echo "<a class='sign-link' href='signin'>Sign In</a>";
+                        }
+                        ?>
+                        <?php
+                        if (!isset($_SESSION['id'])) {
+                            echo "<a class='sign-link' href='signup' style='background: #fff; color: #000;'>Sign Up</a>";
+                        } else {
+                            echo "<a class='sign-link' href='signout'>Sign Out</a>";
+                        }
+>>>>>>> parent of 22c27de (update)
                         ?>
                     </div>
                 </div>

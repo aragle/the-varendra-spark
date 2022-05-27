@@ -2,7 +2,7 @@
 
 // Check If Already Login the Go to Root
 if (isset($_SESSION['id'])) {
-  echo '<script>window.location.replace("/spark/")</script>';
+  echo '<script>window.location.replace("/")</script>';
 }
 
 // initializing variables
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($count == 1) {
       if ($fetch['status'] == 1) {
         $_SESSION['id'] = $fetch['id'];
-        echo '<script>window.location.replace("/spark/")</script>';
+        echo '<script>window.location.replace("/")</script>';
       } else {
         $error = "Your account is Inactive! <a href='verification'>[activate your account]</a>";
         echo "<script>alertBox('danger','Inactive Account!','Verify your email first.')</script>";

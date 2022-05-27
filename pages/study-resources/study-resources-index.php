@@ -5,5 +5,9 @@
 </div>
 
 <?php
+<<<<<<< HEAD
     include 'departments-list.php';
+=======
+include 'departments-list.php';
+>>>>>>> parent of 22c27de (update)
 ?>

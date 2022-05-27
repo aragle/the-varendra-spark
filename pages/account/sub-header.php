@@ -3,8 +3,10 @@
     <ul class="nav nav-tabs" style="border-bottom: 0!important;">
         <li><a class="sub-nav" data-toggle="tab" href="profile">Profile</a></li>
         <li><a class="sub-nav" data-toggle="tab" href="#">Settings</a></li>
-        <li><a class="sub-nav" data-toggle="tab" href="results-new?stu_id=192311018&semester=1st">Results</a></li>
-        <li><a class="sub-nav" data-toggle="tab" href="payment">Payment History</a></li>
     </ul>
 </div>
+<<<<<<< HEAD
 <!-- <hr class="mt-0 mb-4"> -->
+=======
+<!-- <hr class="mt-0 mb-4"> -->
+>>>>>>> parent of 22c27de (update)

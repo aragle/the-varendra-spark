@@ -2,7 +2,7 @@
 
 // Check If Already Login the Go to Root
 if (isset($_SESSION['id'])) {
-  echo '<script>window.location.replace("/spark/")</script>';
+  echo '<script>window.location.replace("/")</script>';
 }
 
 require 'plugins/phpmailer/src/PHPMailer.php';
@@ -87,9 +87,9 @@ if (isset($_POST['registration'])) {
     $mail->SMTPAuth   = TRUE;
     $mail->SMTPSecure = "tls";
     $mail->Port       = 587;
-    $mail->Host       = "SMTP Server Link";
-    $mail->Username   = "SMTP email"; // Email for test mailer
-    $mail->Password   = "SMTP Password"; // Password for test mailer
+    $mail->Host       = ""; // SMTP server
+    $mail->Username   = ""; // SMTP account username
+    $mail->Password   = ""; // SMTP account password
 
     // Mail Body
     $mail->IsHTML(true);
@@ -102,9 +102,9 @@ if (isset($_POST['registration'])) {
     Hello, ".$_POST['firstname']." ".$_POST['lastname']."!<br>
     Thank you for registration. Please verify your email to continue your journey with us.<br><br>
     Your Verification Code is <b>".$code."</b><br><br>
-    <a href='http://specdude.com/email-verification?".$student_id."&verification-code=".$code."&verify=email'>Click here to verify your email</a><br><br>
+    <a href='http://domain/email-verification?".$student_id."&verification-code=".$code."&verify=email'>Click here to verify your email</a><br><br>
     Copy this link and browse from any browser:<br>
-    http://specdude.com/email-verification?student-id=".$student_id."&verification-code=".$code."&verify=email<br><br>
+    http://domain/email-verification?student-id=".$student_id."&verification-code=".$code."&verify=email<br><br>
     Account Info:<br>
     Student ID: ".$_POST['stu_id']."<br>
     Password: ".$_POST['password'];
@@ -123,14 +123,7 @@ if (isset($_POST['registration'])) {
         $query = "INSERT INTO users (first_name, last_name, student_id, email, password,status,token,permission)
                   VALUES('$first_name', '$last_name', '$student_id', '$email', '$pass', '$status', '$token','$permission')";
         mysqli_query($connection, $query);
-
-        // $sql = "Select id from users where student_id = '$student_id'";
-        // $result = mysqli_query($connection, $sql);
-        // $fetch = mysqli_fetch_array($result,MYSQLI_ASSOC);
-        // $_SESSION['id'] = $fetch['id'];
     }
-
-  	// header('location: registration');
   }
 }
 ?>

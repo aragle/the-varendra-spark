@@ -29,9 +29,10 @@ body, html {
 </style>
 <body>
 
-<?php include 'pages/journal/posts-model.php'; ?>
-<?php include 'pages/journal/posts-model.php'; ?>
-<?php include 'pages/journal/posts-model.php'; ?>
-<?php include 'pages/journal/posts-model.php'; ?>
-
-</body>
+<div class="bgimg">
+  <div class="middle">
+    <h1>Under Construction</h1>
+    <hr>
+    <p>Journal</p>
+  </div>
+</div>

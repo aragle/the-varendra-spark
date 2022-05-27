@@ -14,6 +14,7 @@
 
                             <form action="signup" method="post">
                                 <?php
+<<<<<<< HEAD
                                         foreach ($errors as $issues){
                                             echo "<script>alertBox('danger','Registration Failed!','Input Required Information.')</script>";
                                             echo "<div style='text-align:center;'><span style='color:#DC143C;'>" . $issues . "<br>" . "</span></div>";
@@ -23,12 +24,26 @@
                                 <div class="form-outline mb-2 col-5 float-end">
                                     <input type="text" name="lastname" id="lastname"
                                         class="form-control form-control-lg" />
+=======
+                                foreach ($errors as $issues) {
+                                    echo "<script>alertBox('danger','Registration Failed!','Input Required Information.')</script>";
+                                    echo "<div style='text-align:center;'><span style='color:#DC143C;'>" . $issues . "<br>" . "</span></div>";
+                                }
+                                ?>
+                                <br>
+                                <div class="form-outline mb-2 col-5 float-end">
+                                    <input type="text" name="lastname" id="lastname" class="form-control form-control-lg" />
+>>>>>>> parent of 22c27de (update)
                                     <label class="form-label" for="lastname">Last Name</label>
                                 </div>
 
                                 <div class="form-outline mb-2 col-6">
+<<<<<<< HEAD
                                     <input type="text" name="firstname" id="firstname"
                                         class="form-control form-control-lg" />
+=======
+                                    <input type="text" name="firstname" id="firstname" class="form-control form-control-lg" />
+>>>>>>> parent of 22c27de (update)
                                     <label class="form-label" for="firstname">First Name</label>
                                 </div>
 
@@ -43,30 +58,49 @@
                                 </div>
 
                                 <div class="form-outline mb-2">
+<<<<<<< HEAD
                                     <input type="password" name="password" id="password"
                                         class="form-control form-control-lg" />
+=======
+                                    <input type="password" name="password" id="password" class="form-control form-control-lg" />
+>>>>>>> parent of 22c27de (update)
                                     <label class="form-label" for="password">Password</label>
                                 </div>
 
                                 <div class="form-outline mb-4">
+<<<<<<< HEAD
                                     <input type="password" name="password_confirm" id="password_confirm"
                                         class="form-control form-control-lg" />
+=======
+                                    <input type="password" name="password_confirm" id="password_confirm" class="form-control form-control-lg" />
+>>>>>>> parent of 22c27de (update)
                                     <label class="form-label" for="password_confirm">Confirm your password</label>
                                 </div>
 
                                 <div class="form-check d-flex justify-content-center mb-3">
+<<<<<<< HEAD
                                     By Clicking Sign Up. You agree with our &nbsp;<a href="#"
                                         class="text-white-50 fst-italic fw-bold"> Terms of
+=======
+                                    By Clicking Sign Up. You agree with our &nbsp;<a href="#" class="text-white-50 fst-italic fw-bold"> Terms of
+>>>>>>> parent of 22c27de (update)
                                         service</a>
                                 </div>
 
                                 <div class="d-flex justify-content-center">
+<<<<<<< HEAD
                                     <button type="submit" class="btn btn-outline-light btn-lg submit-button px-5"
                                         name="registration" id="registration">Sign Up</button>
                                 </div>
 
-                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login"
+                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="signin"
                                         class="fw-bold text-white-50">[Sign In]</a></p>
+=======
+                                    <button type="submit" class="btn btn-outline-light btn-lg submit-button px-5" name="registration" id="registration">Sign Up</button>
+                                </div>
+
+                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="signin" class="fw-bold text-white-50">[Sign In]</a></p>
+>>>>>>> parent of 22c27de (update)
                             </form>
                         </div>
                     </div>

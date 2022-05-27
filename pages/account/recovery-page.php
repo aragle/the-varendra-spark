@@ -26,15 +26,26 @@
                                     <label class="form-label" for="email">Email</label>
                                 </div>
 
+<<<<<<< HEAD
                                 <button class="btn btn-outline-light btn-lg px-5 submit-button"
                                     type="submit">Submit</button>
                             </form>
                         </div>
                         <p class="text-center text-muted mt-5 mb-0">Remebrer password? <a href="login"
                                         class="fw-bold text-white-50">[Login Here]</a></p>
+=======
+                                <button class="btn btn-outline-light btn-lg px-5 submit-button" type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <p class="text-center text-muted mt-5 mb-0">Remebrer password? <a href="login" class="fw-bold text-white-50">[Login Here]</a></p>
+>>>>>>> parent of 22c27de (update)
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 </section>
+=======
+</section>
+>>>>>>> parent of 22c27de (update)
