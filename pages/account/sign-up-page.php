@@ -65,7 +65,7 @@
                                         name="registration" id="registration">Sign Up</button>
                                 </div>
 
-                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login"
+                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="signin"
                                         class="fw-bold text-white-50">[Sign In]</a></p>
                             </form>
                         </div>
